@@ -18,7 +18,7 @@ header{
 }
 nav{
     text-align: center;
-    font-size: 15px;
+    font-size: 5rem;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 10px;
     margin-top: 2rem;
@@ -33,7 +33,7 @@ article{
     padding: 1rem;
     width: 15%;
     display: inline-block;
-    height: 10px;
+    height: 1rem;
     
 }
 
@@ -51,7 +51,7 @@ section, aside{
  aside{
     width: 40%;
     display: inline-block;
-    height: 300px;
+    height: 60%;
 }
 section{
     background-color: rgb(6, 255, 234);
