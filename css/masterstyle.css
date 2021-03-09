@@ -1,32 +1,63 @@
-*{
-    padding: 0;
-    margin: 0;
-    color: rgb(229, 255, 0);
-    text-align: center  ;
-}  
 html, body{
-    background-color: rgb(255, 241, 241);
+    background-color: #127a94   ;
+}
+
+header{
+    text-align: center  ;
+    font-size: xx-large;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 96.75%;
+    
+    height: 80px;
+    margin-top: 4rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    background-color:#fa4011 ;
+    
+}
+nav{
+    text-align: center;
+    font-size: 15px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    background-color:#13C9F6  ;
+}
+article{
+    
+    margin: 0.5rem;
+    
+    padding: 1rem;
+    width: 15%;
+    display: inline-block;
+    height: 10px;
+    
 }
 
 .main-container{
-    border: 8px solid rgb(250, 0, 187);
-    border-radius: 20px ;
-    margin: 20rem ;
-    background-color: rgb(0, 0, 0);
-
+    margin: 15px ;
+ 
 }
 
-nav, section, footer, article, aside{
-border: 2px solid rgb(0, 255, 0);
-margin:1rem;
-border-radius: 10px;
-padding: 1rem;
+
+section, footer, aside{
+    text-align: center;
+    font-size: 15px;
+    border: 2px solid rgb(2, 2, 2);
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
 }
-article, aside{
+ aside{
     width: 40%;
     display: inline-block;
     height: 300px;
 }
-nav, section,footer{
-    background-color: rgb(0, 26, 255);
+section,footer{
+    background-color: rgb(6, 255, 234);
 }
+
+
