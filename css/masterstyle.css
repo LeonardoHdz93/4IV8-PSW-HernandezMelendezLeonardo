@@ -18,7 +18,8 @@ header{
 }
 nav{
     text-align: center;
-    font-size: 5rem;
+    font-size: 6rem;
+    font-weight: 400;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 0.5rem;
     margin-top: 2rem;
@@ -79,7 +80,8 @@ img.pequeño{
 }
 article.sub{
     margin: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
     padding: 1rem;
     width: 15%;
     display: inline-block;
@@ -94,11 +96,14 @@ article.sub{
 }
 article.links{
     text-align: center;
-    font-size: x-large;
-    background-color: #fc8e73;
-    border: 2px solid rgb(0, 0, 0);
-    width: 47%;
-    height: 45%;    
-    display: inline-table;    
-    margin: 2rem;
+    font-size: 5rem;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+   
+    height: 90%;
+    background-color:#fc8e73  ;
+
+
+    
 }
