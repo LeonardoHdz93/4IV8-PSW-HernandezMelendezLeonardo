@@ -92,3 +92,13 @@ article.sub{
     margin: 0.5rem;    
     padding: 1rem;
 }
+article.links{
+    text-align: center;
+    font-size: x-large;
+    background-color: #fc8e73;
+    border: 2px solid rgb(0, 0, 0);
+    width: 47%;
+    height: 45%;    
+    display: inline-table;    
+    margin: 2rem;
+}
