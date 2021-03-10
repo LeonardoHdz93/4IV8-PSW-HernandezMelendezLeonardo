@@ -29,7 +29,7 @@ section.datos{
     margin: 1rem;
     border:2px solid rgb(0, 0, 0);
 }
-article{
+article.dtos{
     text-align: center;
     font-size: x-large;
     background-color: #fc8e73;
@@ -62,6 +62,13 @@ img.pequeño{
     width: 50px; 
     height: 50px;
 }
-.regresar{
-    margin-top: 8cm;
+article.flechas{
+    text-align: center;
+    font-size: x-large;
+    
+    width: 47%;
+    height: 45%;    
+    display: inline-table;    
+    margin: 2rem;
+    
 }
