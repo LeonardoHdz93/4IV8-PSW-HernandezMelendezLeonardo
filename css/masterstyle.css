@@ -175,7 +175,15 @@ a:link, a:visited, a:active {
     font-size: 2.2rem;
     color: #1d2f3d;
 }
-
+p.letra-menu{
+    text-align: center;
+    font-size: 2rem;
+    color: #ffcd48;
+}
+.letra-menu2{
+    font-size: 3rem;
+    color: #ffcd48;
+}
 /*SECCION DATOS PERSONALES*/
 h3.datos{
     font-size: 3.2rem;
@@ -194,6 +202,7 @@ h3.datos{
     margin-right: 2.5rem;
     background-color:#cacaca ;
 }
+
 .indice-dtos{
     display: inline-block   ;    
 }
@@ -237,15 +246,27 @@ section.datos{
     margin: 1rem;
     border:2px solid #cacaca);
 }
+section.datos2{
+    background-color: #e83555;
+    margin: 1rem;
+    border:2px solid #cacaca);
+}
+section.datos3{
+    background-color: #d1c928;
+    margin: 1rem;
+    border:2px solid #cacaca);
+}
 .dtos{
     text-align: center;
     font-size: x-large;
     background-color: #cacaca;
     border: 2px solid rgb(0, 0, 0);
+    border-radius: 2rem;
     width: 47%;
     height: 45%;    
     display: inline-table;    
     margin: 2rem;
+    
     
 }
 .dtos2{
@@ -258,6 +279,20 @@ section.datos{
     display: inline-table;    
     margin: 2rem;
     
+}
+.dtos2-nav{
+    text-align: center;
+    font-size: x-large;
+    background-color: #1d2f3d;
+    border-radius: 1rem;
+    width: 47%;
+    height: 45%;    
+    display: inline-table;    
+    margin: 2rem;
+    
+}
+.dtos-letra-a{
+    color: #1d2f3d;
 }
 aside{
     text-align: center;
