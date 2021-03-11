@@ -113,56 +113,6 @@ a:link, a:visited, a:active {
     text-decoration:none;
     
 }
-.nav2{
-    color: white;    
-    margin-top: 8rem;
-}
-.dato-circulo{
-    text-align:center;
-    display:inline-table;
-    margin-right: 4rem;
-    margin-left: 4rem;
-    width: 20rem;
-    height: 20rem;
-    background-color:  #E83555;    
-    border-radius: 50%;
-}
-.esco-circulo{
-    display:inline-table;
-    margin-right: 4rem;
-    margin-left: 4rem;
-    width: 20rem;
-    height: 20rem;
-    background-color:  #60D0D4;    
-    border-radius: 50%;
-}
-.cursos-circulo{
-    display:inline-table;
-    margin-right: 4rem;
-    margin-left: 4rem;
-    width: 20rem;
-    height: 20rem;
-    background-color:  #D1C928;    
-    border-radius: 50%;
-}
-.hobbies-circulo{
-    display:inline-table;
-    margin-right: 4rem;
-    margin-left: 4rem;
-    width: 20rem;
-    height: 20rem;
-    background-color:  #E83555;    
-    border-radius: 50%;
-}
-.habilidades-circulo{
-    display:inline-table;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    width: 20rem;
-    height: 20rem;
-    background-color:  #60d0d4;    
-    border-radius: 50%;
-}
 
 /*Barra de navegacion*/
 .navbar{
@@ -171,7 +121,7 @@ a:link, a:visited, a:active {
 }
 .navegador{
     height: 12rem;
-    background-color: grey;
+    background-color:#ffcd48;
     margin:0;
     
     text-align: center;
@@ -223,15 +173,110 @@ a:link, a:visited, a:active {
 }
 .nav-letra{
     font-size: 2.2rem;
-    color: #dacdcd;
+    color: #1d2f3d;
 }
-@media screen and (max-width:800px){
-    .nombre{
-        width: auto;
-        flex: 1;
-    }
-    .navegador{
-        width: auto;
-        flex: 1;
-    }
+
+/*SECCION DATOS PERSONALES*/
+h3.datos{
+    font-size: 3.2rem;
 }
+
+.informacion{
+    text-align: center  ;
+    font-size: x-large;
+    border: 2rem #ffcd48;
+    border-radius: 10px;
+    width: 90%;    
+    height: 100%;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    background-color:#cacaca ;
+}
+.indice-dtos{
+    display: inline-block   ;    
+}
+.seccion-datos{
+    text-align: center  ;
+    font-size: xx-large;
+    
+    border-radius: 10px;
+    width: 60%;    
+    height: 50rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    background-color:#cacaca ;
+}
+.titulo-datos-personales{
+    text-align: center  ;
+    font-size: xx-large;
+    
+    border-radius: 10px;
+    width: 95%;    
+    height: 8rem;
+    margin-top: 4rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    background-color:#cacaca ;
+}
+
+section.datito{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    height: 90%;
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    background-color:#1d2f3d;  ;
+}
+section.datos{
+    background-color: #60d0d4;
+    margin: 1rem;
+    border:2px solid #cacaca);
+}
+.dtos{
+    text-align: center;
+    font-size: x-large;
+    background-color: #cacaca;
+    border: 2px solid rgb(0, 0, 0);
+    width: 47%;
+    height: 45%;    
+    display: inline-table;    
+    margin: 2rem;
+    
+}
+.dtos2{
+    text-align: center;
+    font-size: x-large;
+    background-color: #cacaca;
+    
+    width: 47%;
+    height: 45%;    
+    display: inline-table;    
+    margin: 2rem;
+    
+}
+aside{
+    text-align: center;
+    font-size: x-large;
+    background-color: #cacaca;
+    border: 2px solid rgb(0, 0, 0);
+    width: 47%;
+    height: 45%;    
+    display: inline-table;    
+    margin: 2rem;
+    position: sticky;
+    top: 20px
+}
+
+/*Colores*/
+
+/*
+    #cacaca = Fondo 
+    #e83555 = rosa
+    #60d0d4 = Azul
+    #d1c928 = Amarillo
+*/
