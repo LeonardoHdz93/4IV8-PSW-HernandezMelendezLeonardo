@@ -1,109 +1,237 @@
+@keyframes animacion_test{
+    from{
+        color: #4d4d4d ;
+    }
+    to{
+        color: turquoise;
+
+    }
+}
+
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif0;
+    color: #4D4D4D;
+    
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    
+    
+
+}
 html, body{
-    background-color: #26cdf7   ;
+    background-color: #cacaca   ;
+    scroll-behavior: smooth;
 }
-
-header{
-    text-align: center  ;
+div.nombre{
+    margin-top: 1rem;
+    
     font-size: xx-large;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 5px;
- 
-    align-items: center;
-    height: 15vh;
-    margin-top: 4rem;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-    background-color:#fb5e37 ;
+    margin: 5rem;
+    padding: 2rem;
+}
+h1.nombre_h1{
+    
+    color: #4D4D4D;
+}
+div.nav{
+    
+    text-align: right ;
+    margin-left: 20rem;
+    height: 5rem
     
 }
-nav{
+ul.barra-enlaces{
+    
     text-align: center;
-    font-size: 6rem;
-    font-weight: 400;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 0.5rem;
-    margin-top: 2rem;
-   
-    height: 90%;
-    background-color:#fb5e37  ;
-}
-article.links{
-    
-    margin:2rem;
-    
+    font-size: x-large;
+    width: 90%;
     padding: 1rem;
+    box-sizing: border-box;       
+    margin-left: 20rem;
+}
+a.datos{
+    
+    font-size: 3rem;
+    margin: 1.5rem;
+    animation-name: animacion_test ;
+    animation-play-state: running;
+}
+a.esco{
+    
+    font-size: 3rem;
+    margin: 1.5rem;
+}
+a.cursos{
+    
+    font-size: 3rem;
+    margin: 15px;
+}
+a.hobbies{
+    
+    font-size: 3rem;
+    margin: 1.5rem;
+}
+a.habilidades{
+    
+    font-size: 3rem;
+    margin: 1.5rem;
+}
+
+img.img-circulo{    
+    margin-top: 5rem;
+    margin-left: 6rem;
+    width: 35rem;
+    height: 35rem;
+    border: 0.25rem solid #000;    
+    border-radius: 50%;
+}
+.imagen{
     
     display: inline-block;
-    
-    
+    text-align: left;
 }
-
-
-
-
-section, aside{
-    text-align: center;
-    font-weight: 500;
-    
-    border: 0.2rem solid rgb(2, 2, 2);
-    margin: 0.5rem;
-    border-radius: 10px;
-    padding: 0.5rem;
-}
- aside{
-    width: 40%;
+.bienvenida{
+    margin-left: 37rem;
+    margin-right: 5rem;
+    margin-bottom: 10rem;
+    font-size: xx-large;    
     display: inline-block;
-    height: 60%;
+    text-align: right;    
+    width: 50%;    
 }
-section{
-    background-color: rgb(6, 255, 234);
+.bienvenida-texto{
+    text-align: left;
+    font-size: 10rem;    
 }
-img.grande{
-    width: 200px;
-    height: 200px;
+.bienvenida-texto2{
+    text-align: left;
+    font-size: 5rem;    
 }
-img.mediano{
-    width: 100px; 
-    height: 100px;
-}
-img.pequeño{
-    width: 50px; 
-    height: 50px;
-}
-.subtitulos{
-    
-    background-color: #13c9f6;
-    border: 2px solid rgb(2, 2, 2);
-    margin: 0.5rem;    
-    padding: 1rem;
+/*En tu hoja de estilos */
+a:link, a:visited, a:active {
+    text-decoration:none;
     
 }
-article.sub{
-    margin: 0.5rem;
-    font-size: 2rem;
-    font-weight: 700;
-    padding: 1rem;
-    width: 15%;
-    display: inline-block;
-    height: 10rem;
+.nav2{
+    color: white;    
+    margin-top: 8rem;
 }
-.menu{
-    background-color: #fc8e73;
-    font-size: 15px;
-    border: 2px solid rgb(2, 2, 2);
-    margin: 0.5rem;    
-    padding: 1rem;
+.dato-circulo{
+    text-align:center;
+    display:inline-table;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    width: 20rem;
+    height: 20rem;
+    background-color:  #E83555;    
+    border-radius: 50%;
 }
-article.links{
+.esco-circulo{
+    display:inline-table;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    width: 20rem;
+    height: 20rem;
+    background-color:  #60D0D4;    
+    border-radius: 50%;
+}
+.cursos-circulo{
+    display:inline-table;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    width: 20rem;
+    height: 20rem;
+    background-color:  #D1C928;    
+    border-radius: 50%;
+}
+.hobbies-circulo{
+    display:inline-table;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    width: 20rem;
+    height: 20rem;
+    background-color:  #E83555;    
+    border-radius: 50%;
+}
+.habilidades-circulo{
+    display:inline-table;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    width: 20rem;
+    height: 20rem;
+    background-color:  #60d0d4;    
+    border-radius: 50%;
+}
+
+/*Barra de navegacion*/
+.navbar{
+    position: sticky;
+    top: 0;
+}
+.navegador{
+    height: 12rem;
+    background-color: grey;
+    margin:0;
+    
     text-align: center;
-    font-size: 5rem;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 0.5rem;
-    margin-top: 2rem;
-   
-    height: 90%;
-    background-color:#fc8e73  ;
+    padding: 0 ;
+    position: sticky;
+    top: 0;
+}
 
-
+.dato-circulo-nav{
+    text-align:center;
+    display:inline-table;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    width: 20rem;
+    height: 15rem;
+        
+}
+.esco-circulo-nav{
+    display:inline-table;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    width: 20rem;
+    height: 20rem;
+}
+.cursos-circulo-nav{
+    display:inline-table;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    width: 20rem;
+    height: 20rem;    
+}
+.hobbies-circulo-nav{
+    display:inline-table;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    width: 20rem;
+    height: 20rem;
+        
     
+}
+.habilidades-circulo-nav{
+    display:inline-table;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    width: 20rem;
+    height: 20rem;
+      
+    
+}
+.nav-letra{
+    font-size: 2.2rem;
+    color: #dacdcd;
+}
+@media screen and (max-width:800px){
+    .nombre{
+        width: auto;
+        flex: 1;
+    }
+    .navegador{
+        width: auto;
+        flex: 1;
+    }
 }
