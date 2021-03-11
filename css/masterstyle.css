@@ -131,6 +131,7 @@ a:link, a:visited, a:active {
 }
 
 .dato-circulo-nav{
+    
     text-align:center;
     display:inline-table;
     margin-right: 4rem;
@@ -139,6 +140,11 @@ a:link, a:visited, a:active {
     height: 15rem;
         
 }
+.dato-circulo-nav :hover {
+    background-color: #1d2f3d;
+    color: #cacaca;
+    cursor: pointer;
+  }
 .esco-circulo-nav{
     display:inline-table;
     margin-right: 4rem;
@@ -146,6 +152,11 @@ a:link, a:visited, a:active {
     width: 20rem;
     height: 20rem;
 }
+.esco-circulo-nav :hover {
+    background-color: #1d2f3d;
+    color: #cacaca;
+    cursor: pointer;
+  }
 .cursos-circulo-nav{
     display:inline-table;
     margin-right: 4rem;
@@ -153,6 +164,11 @@ a:link, a:visited, a:active {
     width: 20rem;
     height: 20rem;    
 }
+.cursos-circulo-nav :hover {
+    background-color: #1d2f3d;
+    color: #cacaca;
+    cursor: pointer;
+  }
 .hobbies-circulo-nav{
     display:inline-table;
     margin-right: 4rem;
@@ -162,20 +178,36 @@ a:link, a:visited, a:active {
         
     
 }
+.hobbies-circulo-nav :hover {
+    background-color: #1d2f3d;
+    color: #cacaca;
+    cursor: pointer;
+  }
 .habilidades-circulo-nav{
     display:inline-table;
     margin-left: 4rem;
     margin-right: 4rem;
     width: 20rem;
     height: 20rem;
-      
-    
 }
+.habilidades-circulo-nav :hover {
+    
+    background-color: #1d2f3d;
+    color: #cacaca;
+    cursor: pointer;
+  }
+  a.datos:hover{
+      margin-top: 0;
+  }
 .nav-letra{
+    text-align: center;
+    margin: 0;
+    height: 5rem;
     font-size: 2.2rem;
     color: #1d2f3d;
 }
 p.letra-menu{
+    
     text-align: center;
     font-size: 2rem;
     color: #ffcd48;
@@ -305,6 +337,9 @@ aside{
     margin: 2rem;
     position: sticky;
     top: 20px
+}
+.indice :{
+
 }
 
 /*Colores*/
