@@ -212,7 +212,7 @@ h3.datos{
 .informacion{
     text-align: center  ;
     font-size: x-large;
-    border: 2rem #ffcd48;
+    border: 2rem #1d2f3d;
     border-radius: 10px;
     width: 90%;    
     height: 100%;
@@ -221,7 +221,7 @@ h3.datos{
     align-items: center;
     margin-left: 2.5rem;
     margin-right: 2.5rem;
-    background-color:#caca00 ;
+    background-color:#cacaca8e ;
     
 }
 
