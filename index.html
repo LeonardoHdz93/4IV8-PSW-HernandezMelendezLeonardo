@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=opera">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, ">
+
     <link rel="stylesheet" href="./css/masterstyle.css">
+    <link rel   ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <title> Main </title>
 </head>
 <body background="./imagenes/Fondo de pantalla.jpg">
@@ -12,28 +14,53 @@
     <header >
     <DIV class="navegador" id="inicio" >
         <nav role="navigation" class="navbar">
-        <ul class="barra-enlaces-nav" id="nav1">
+        <ul class="barra-enlaces-nav" id="nav1" data-animation="to-right">
 
             
-            <section class="dato-circulo-nav">             
-                <a href="#datito" class="datos"><p class="nav-letra"> Datos Personales </p></a>
-            </section>
+            <li class="cursos-circulo-nav" >                
+                <a href="#datito" class="cursos">
+                    <span class="nav-letra"> Datos Personales </span>
+                    <span>
+                        <i class="fas fa-address-card" aria-hidden="true"></i>
+                        </span>
+                </a>
+            </li>
 
-            <section class="esco-circulo-nav">                           
-                <a href="#esquito" class="datos"><p class="nav-letra"> Escolaridad </p></a>
-            </section>  
+            <li class="cursos-circulo-nav" >                
+                <a href="#cursito" class="cursos">
+                    <span class="nav-letra"> <br> Escolaridad  </span>
+                    <span>
+                        <i class="fas fa-address-card" aria-hidden="true"></i>
+                        </span>
+                </a>
+            </li> 
             
-            <section class="cursos-circulo-nav">                
-                <a href="#cursito" class="cursos"><p class="nav-letra"> Certificados </p></a>
-            </section>
+            <li class="cursos-circulo-nav">                
+                <a href="#cursito" class="cursos">
+                    <span class="nav-letra"><br> Certificados </span>
+                    <span>
+                        <i class="fas fa-address-card" aria-hidden="true"></i>
+                        </span>
+                </a>
+            </li>
 
-            <section class="hobbies-circulo-nav">                
-                <a href="#hoby" class="hobbies"><p class="nav-letra"> Hobbies </p></a>
-            </section>
+            <li class="hobbies-circulo-nav">                
+                <a href="#hoby" class="hobbies">
+                    <span class="nav-letra"><br> Hobbies </span> 
+                    <span>
+                        <i class="fas fa-address-card" aria-hidden="true"></i>
+                        </span>
+                </a>
+            </li>
 
-            <section class="habilidades-circulo-nav">                
-                <a href="#habi" class="habilidades"><p class="nav-letra"> Habiilidades </p> </a>
-            </section> 
+            <li class="habilidades-circulo-nav">                
+                <a href="#habi" class="habilidades">
+                    <span class="nav-letra"><br> Habiilidades </span> 
+                    <span>
+                        <i class="fas fa-address-card" aria-hidden="true"></i>
+                        </span>
+                </a>
+            </li> 
         </ul>
     </nav>
     <br><br><br><br><br>
@@ -57,7 +84,7 @@
     <div class="informacion">
 
 
-        <div class="dtos2">
+        
         <aside class="dtos2-nav">
             <h3 class="letra-menu2">Temas</h3><br>
                 <nav class="indice">
@@ -76,12 +103,12 @@
 
                 </nav>
         </aside>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </div class="dtos2">
+        
+    
     
 
-    <div class="dtos2">
-        
+    
+        <aside class="dtos3-nav">
     <div class="titulo-datos-personales" id="datito">
         <h1 class="titulo-dats"> Datos Personales </h1> 
     </div class="titulo-datos-personales">
@@ -200,5 +227,6 @@
                     </section>
                 </section>
             </div class="datos-personales"> 
+            </div>
 </body>
 </html>

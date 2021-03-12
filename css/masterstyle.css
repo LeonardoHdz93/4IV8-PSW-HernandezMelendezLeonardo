@@ -1,12 +1,3 @@
-@keyframes animacion_test{
-    from{
-        color: #4d4d4d ;
-    }
-    to{
-        color: turquoise;
-
-    }
-}
 
 *{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif0;
@@ -25,11 +16,11 @@ html, body{
     scroll-behavior: smooth;
 }
 div.nombre{
-    margin-top: 1rem;
+    margin-top: 1%;
     
     font-size: xx-large;
-    margin: 5rem;
-    padding: 2rem;
+    margin: 3%;
+    padding: 1%;
 }
 h1.nombre_h1{
     color: #cacaca;
@@ -41,8 +32,8 @@ h1.titulo-dats{
 div.nav{
     
     text-align: right ;
-    margin-left: 20rem;
-    height: 5rem
+    margin-left: 20%;
+    height: 5%
     
 }
 ul.barra-enlaces{
@@ -50,39 +41,39 @@ ul.barra-enlaces{
     text-align: center;
     font-size: x-large;
     width: 90%;
-    padding: 1rem;
+    padding: 1%;
     box-sizing: border-box;       
-    margin-left: 20rem;
+    margin-left: 20%;
 }
 a.datos{
     
-    font-size: 3rem;
-    margin: 1.5rem;
-    animation-name: animacion_test ;
-    animation-play-state: running;
+    font-size: 4%;
+    margin: 2%;
+    
 }
 a.esco{
     
-    font-size: 3rem;
-    margin: 1.5rem;
+    font-size: 4%;
+    margin: 5%;
 }
 a.cursos{
     
-    font-size: 3rem;
-    margin: 15px;
+    font-size: 4%;
+    margin: 5%;
 }
 a.hobbies{
     
-    font-size: 3rem;
-    margin: 1.5rem;
+    font-size: 4%;
+    margin: 5%;
 }
 a.habilidades{
     
-    font-size: 3rem;
-    margin: 1.5rem;
+    font-size: 4%;
+    margin: 5%;
 }
 .img-bienvenida{
-    height: 60rem;
+    
+    height: 50%;
 }
 
 img.img-circulo{    
@@ -99,7 +90,7 @@ img.img-circulo{
     text-align: left;
 }
 .bienvenida{
-    margin: 15rem;
+    margin: 10%;
     font-size: xx-large;    
     display: inline-block;
     text-align: right;    
@@ -136,16 +127,7 @@ a:link, a:visited, a:active {
     top: 0;
 }
 
-.dato-circulo-nav{
-    
-    text-align:center;
-    display:inline-table;
-    margin-right: 4rem;
-    margin-left: 4rem;
-    width: 20rem;
-    height: 15rem;
-        
-}
+
 .dato-circulo-nav :hover {
     background-color: #1d2f3d;
     color: #cacaca;
@@ -153,10 +135,10 @@ a:link, a:visited, a:active {
   }
 .esco-circulo-nav{
     display:inline-table;
-    margin-right: 4rem;
-    margin-left: 4rem;
-    width: 20rem;
-    height: 20rem;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 10%;
+    height: 10%;
 }
 .esco-circulo-nav :hover {
     background-color: #1d2f3d;
@@ -165,10 +147,10 @@ a:link, a:visited, a:active {
   }
 .cursos-circulo-nav{
     display:inline-table;
-    margin-right: 4rem;
-    margin-left: 4rem;
-    width: 20rem;
-    height: 20rem;    
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 10%;
+    height: 10%;    
 }
 .cursos-circulo-nav :hover {
     background-color: #1d2f3d;
@@ -177,10 +159,10 @@ a:link, a:visited, a:active {
   }
 .hobbies-circulo-nav{
     display:inline-table;
-    margin-right: 4rem;
-    margin-left: 4rem;
-    width: 20rem;
-    height: 20rem;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 10%;
+    height: 10%;
         
     
 }
@@ -191,10 +173,10 @@ a:link, a:visited, a:active {
   }
 .habilidades-circulo-nav{
     display:inline-table;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    width: 20rem;
-    height: 20rem;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 10%;
+    height: 10%;
 }
 .habilidades-circulo-nav :hover {
     
@@ -215,7 +197,7 @@ a:link, a:visited, a:active {
 p.letra-menu{
     
     text-align: center;
-    font-size: 2rem;
+    font-size: 100%;
     color: #ffcd48;
 }
 .letra-menu2{
@@ -234,11 +216,13 @@ h3.datos{
     border-radius: 10px;
     width: 90%;    
     height: 100%;
+    margin-top: 9%;
     margin-bottom: 4rem;
     align-items: center;
     margin-left: 2.5rem;
     margin-right: 2.5rem;
-    background-color:#cacaca ;
+    background-color:#caca00 ;
+    
 }
 
 .indice-dtos{
@@ -260,7 +244,7 @@ h3.datos{
 .titulo-datos-personales{
     text-align: center  ;
     font-size: xx-large;
-    
+    border: 10px #ffcd48;
     border-radius: 10px;
     width: 95%;    
     height: 8rem;
@@ -277,22 +261,22 @@ section.datito{
     margin-top: 2rem;
     margin-left: 2.5rem;
     margin-right: 2.5rem;
-    background-color:#ffce48a1;  ;
+    background-color:#1d2f3d;  ;
 }
 section.datos{
-    background-color: #221F28;
+    background-color: #ffcd48;
     margin: 1rem;
-    border:2px solid #cacaca);
+    border:2px solid #cacaca;
 }
 section.datos2{
     background-color: #e83555;
     margin: 1rem;
-    border:2px solid #cacaca);
+    border:2px solid #cacaca;
 }
 section.datos3{
     background-color: #d1c928;
     margin: 1rem;
-    border:2px solid #cacaca);
+    border:2px solid #cacaca;
 }
 .dtos{
     text-align: center;
@@ -313,7 +297,7 @@ section.datos3{
     background-color: #cacaca;
     
     width: 47%;
-    height: 45%;    
+        
     display: inline-table;    
     margin: 2rem;
     
@@ -321,7 +305,19 @@ section.datos3{
 .dtos2-nav{
     text-align: center;
     font-size: x-large;
-    background-color: #1d2f3d;
+    background-color: #1d2f3d   ;
+    border: 5rem #000;
+    border-radius: 1rem;
+    width: 47%;
+    height: 100%;    
+    display: inline-table;    
+    margin: 2rem;
+    
+}
+.dtos3-nav{
+    text-align: center;
+    font-size: x-large;
+    
     border-radius: 1rem;
     width: 47%;
     height: 45%;    
@@ -333,19 +329,8 @@ section.datos3{
     color: #1d2f3d;
 }
 aside{
-    text-align: center;
-    font-size: x-large;
-    background-color: #cacaca;
-    border: 2px solid rgb(0, 0, 0);
-    width: 47%;
-    height: 45%;    
-    display: inline-table;    
-    margin: 2rem;
     position: sticky;
-    top: 20px
-}
-.indice :{
-
+    top: 2%;
 }
 
 /*Colores*/
@@ -356,3 +341,107 @@ aside{
     #60d0d4 = Azul
     #d1c928 = Amarillo
 */
+
+
+/*Animacion*/
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+hr{
+    border-color: var(--hr-color);
+    margin:20px 0;
+}
+
+.barra-enlaces-nav{
+    display: flex;
+    justify-content: center;
+}
+
+.barra-enlaces-nav li{
+    margin-right: 70px;
+}
+
+.barra-enlaces-nav a{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.barra-enlaces-nav a span{
+    transition: transform 0.2s ease-out;
+
+}
+
+.barra-enlaces-nav a span:first-child{
+    display: inline-block;
+    padding: 10px; 
+
+}
+
+.barra-enlaces-nav a span:last-child{
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+}
+
+.barra-enlaces-nav i{
+    font-size: 30px;
+
+}
+
+.barra-enlaces-nav a:hover span:first-child{
+    transform: translateY(-100%);
+}
+
+.barra-enlaces-nav a:hover span:last-child, 
+.barra-enlaces-nav[data-animation] a:hover span:last-child{
+    transform: none;
+}
+
+
+/* Animaciones*/
+
+.barra-enlaces-nav[data-animation="to-top"] a span:last-child {
+    transform: translateY(-100%);
+  }
+.barra-enlaces-nav[data-animation="to-top"] a span:last-child {
+    transform: translateY(-100%);
+  }
+
+.barra-enlaces-nav[data-animation="to-right"] a span:last-child {
+    transform: translateX(-100%);
+  }
+.barra-enlaces-nav[data-animation="to-right"] a span:last-child {
+    transform: translateX(100%);
+  }
+
+.barra-enlaces-nav[data-animation="to-left"] a span:last-child {
+    transform: translateX(100%);
+  }
+  .barra-enlaces-nav[data-animation="to-left"] a span:last-child {
+    transform: translateX(-100%);
+  }
+
+
+
+  /*RESPONSIVE*/
+
+  @viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
