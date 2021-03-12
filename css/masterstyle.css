@@ -113,6 +113,7 @@ a:link, a:visited, a:active {
 
 /*Barra de navegacion*/
 .navbar{
+    display: block;
     position: sticky;
     top: 0;
 }
@@ -442,10 +443,14 @@ hr{
 
   /*RESPONSIVE*/
 
- @media screen and (max-width:900px){
-     .navegador{
+ @media screen and(max-width: 900px){}
+     .navbar .nav1{
          flex-wrap: wrap;
          margin: 0;
          width: 100%;
      }
+     div.informacion{
+         flex-direction: column;
+     }
+     
  }
