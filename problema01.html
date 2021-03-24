@@ -17,12 +17,17 @@
         diseñar un formulario haga dicho calculo
     </p>
 
-    <form method="POST" name="formulario" action="">
+    <form method="POST" name="formulario" onsubmit="return validardos(this)" action="problema01.html">
         <table align="center" border="1">
             <tr>
                 <td class="td_sup"> Introduce la cantidad a invertir: $ </td>
                 <td class="td_inf"><input type="text" name="cantidad"
                     onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_sup"> Especifica los meses de la inversion </td>
+                <td class="td_inf"><input type="text" name="cantidadm"
+                    onkeypress="return validarn(event)" onkeypress="return validardos(this)" size="2"></td>
             </tr>
             <tr>
                 <td></td>

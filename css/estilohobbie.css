@@ -76,75 +76,59 @@ body{
 }
 
 /**=============================*/
-/**======NOMBRE Y BIENVENIDA=======*/
-/**=============================*/
-.nombre_h1 {
-    color: white;
-}
-
-/**=============================*/
 /**======CONTENEDOR IMAGEN=======*/
 /**=============================*/
+.menu{
+    width: 90%;
+    max-width: auto ;
+    margin: 30px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
 
-main {
-	min-height: 90vh;
+    grid-template-areas: "header header header"
+                        "fortnite warzone rocket";
+                        
 }
 
-main .contenido p {
-	margin-bottom: 20px;
-	line-height: 30px;
-	color: #525151;
+.menu > div,
+.menu .header,
+.menu .fortnite,
+.menu .warzone,
+.menu .rocket{
+    padding: 20px;
+    border-radius: 4px;
+}
+.menu .header{
+    text-align: center;
+    grid-area: header;
+}
+.menu .fortnite{
+    
+    text-align: center;
+    grid-area: fortnite;
+}
+.menu .warzone{
+    
+    text-align: center;
+    grid-area: warzone;
+}
+.menu .rocket{   
+    
+    text-align: center;
+    grid-area: rocket;
+}
+.f{
+    width: 70%;
+    height: 70%;
 }
 
-main .contenido .titulo {
-    font-family: 'Montserrat', sans-serif;
-	font-weight: normal;
-	padding-top: 40px;
-}
 
-main .contenido .fecha {
-	font-size: 14px;
-	color: rgb(29, 48, 62);
-    font-weight: lighter;
-}
 
-main.container{
-    background-color: #cacaca;
-    width: 90vw;
-}
-/* * ============================== */
-/* * ============ ASIDE =========== */
-/* * ============================== */
-
-aside {
-	min-width: 30%;
-	margin: 40px 20px 20px 0;
-	height: 100%;
-	background: #1D2F3D;
-	padding: 20px;
-	border-radius: 3px;
-    position: sticky;
-    top: 20px;
-}
-
-aside .titulo {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: normal;
-	font-size: 24px;
-	margin-bottom: 20px;
-	color: #f2f2f2;
-}
-
-aside .indice a {
-	display: block;
-	margin-bottom: 10px;
-	color: #FFCD48;
-    font-size: 15px;
-}
-
-/* * ============================== */
-/* * ========== FOOTER ============ */
-/* * ============================== */
+/**=============================*/
+/**===========FOOTER============*/
+/**=============================*/
 
 footer{
 
@@ -155,7 +139,7 @@ footer{
 }
 h5{
     color: black;
-    font-size: x-large;
+    font-size:small;
 }
 
 .list-inline a{
@@ -163,7 +147,7 @@ h5{
 }
 
 img{
-    width: 80px;
+    width: 30px;
 }
 /* * ============================== */
 /* * ====== MEDIA QUERIES ========= */
@@ -192,3 +176,8 @@ img{
 
     }
 } 
+
+
+.menu{
+    border: solid 2px #000;
+}
