@@ -18,10 +18,37 @@ html{
 }
 
 body{
+    background-color: #cacaca;
     font-family: 'Courier New', Courier, monospace;
     
 }
-
+h5{
+    color: black;
+    font-size: small;
+}
+i.edad{
+    padding-left: 20%;
+    float: left;
+    font-size: 25px;
+}
+i.nss{
+    padding-top: 30px;
+    padding-right: 10%;
+    float: right;
+    font-size: 25px;
+    
+}
+i.correo{
+    padding-top: 30px;
+    padding-left: 5%;
+    float: left;
+    font-size: 25px;
+}
+i.telefono{
+    padding-right: 20%;
+    float: right;
+    font-size: 25px;
+}
 /**=============================*/
 /**==========HEADER=============*/
 /**=============================*/
@@ -75,72 +102,73 @@ body{
     object-position: 0 bottom;
 }
 
-/**=============================*/
-/**======NOMBRE Y BIENVENIDA=======*/
-/**=============================*/
-.nombre_h1 {
-    color: white;
-}
 
 /**=============================*/
-/**======CONTENEDOR IMAGEN=======*/
+/**======CONTENEDOR =======*/
 /**=============================*/
+.container {
+    width: 100%;
+    max-width: auto ;
+    margin: 30px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
 
-main {
-	min-height: 90vh;
+    grid-template-areas: "header header header"
+                        "sidebar contenido contenido"
+                        "info1 info1 info1"
+                        "footer footer footer";
 }
-
-main .contenido p {
-	margin-bottom: 20px;
-	line-height: 30px;
-	color: #525151;
+.container > div,
+.container .header,
+.container .contenido,
+.container .sidebar,
+.container .info1,
+.container .footer{
+    
+    padding: 20px;
+    border-radius: 4px;
 }
-
-main .contenido .titulo {
-    font-family: 'Montserrat', sans-serif;
-	font-weight: normal;
-	padding-top: 40px;
+.container .header{
+    text-align: center;
+    display: inline;
+    float: right;
+    grid-area: header;
 }
-
-main .contenido .fecha {
-	font-size: 14px;
-	color: rgb(29, 48, 62);
-    font-weight: lighter;
+.container .contenido{
+    border:solid 5px black;
+    grid-area: contenido;
+    text-align: center;
+    display: inline;
+    float: right;
 }
-
-main.container{
-    background-color: #cacaca;
-    width: 90vw;
+.container .sidebar{
+    
+    text-align: center;
+    display: inline;
+    float: right;
+    grid-area: sidebar;
+}
+.container .info1{
+    
+    grid-area: info1;
+    text-align: center;
+    display: inline;
+    float: right;
+}
+.container .footer{
+    grid-area: footer;
 }
 /* * ============================== */
-/* * ============ ASIDE =========== */
+/* * === Estilo letra e imagenes ===*/
 /* * ============================== */
-
-aside {
-	min-width: 30%;
-	margin: 40px 20px 20px 0;
-	height: 100%;
-	background: #1D2F3D;
-	padding: 20px;
-	border-radius: 3px;
-    position: sticky;
-    top: 20px;
+.sidebar img{
+    border-radius: 50%;
 }
 
-aside .titulo {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: normal;
-	font-size: 24px;
-	margin-bottom: 20px;
-	color: #f2f2f2;
-}
 
-aside .indice a {
-	display: block;
-	margin-bottom: 10px;
-	color: #FFCD48;
-    font-size: 15px;
-}
+
 
 /* * ============================== */
 /* * ========== FOOTER ============ */
@@ -152,24 +180,21 @@ footer{
     background-color: #a0a0a0;
     text-align: center;
 }
-h5{
-    color: black;
-    font-size: x-large;
-}
+
 
 .list-inline a{
     display: inline-block;
 }
 
-.list-inline img    {
-    width: 80px;
+.list-inline img{
+    width: 30px;
 }
 
 
 /* * ============================== */
 /* * ====== MEDIA QUERIES ========= */
 /* * ============================== */
-@media screen and (max-width: 900px){
+@media screen and (max-width: 768px){
 	.navbar .contenedor {
 		flex-wrap: wrap;
 		margin: 0;
@@ -185,11 +210,8 @@ h5{
 		height: 50vh;
 	}
 
-	main .contenedor {
+	 .contenedor {
 		flex-direction: column;
 	}
-    aside{
-        position: static;
-
-    }
+   
 } 
