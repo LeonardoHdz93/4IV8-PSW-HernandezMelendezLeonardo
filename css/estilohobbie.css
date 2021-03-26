@@ -201,11 +201,11 @@ h1{
 /**=============================*/
 /**======CONTENEDOR IMAGEN=======*/
 /**=============================*/
-.info h2{
+ h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
 }
-.info p{
+ p{
     font-family:monospace;
     text-align: justify;
     font-size: 20px;
@@ -432,11 +432,11 @@ h5{
                              "rl ";
                             
     }
-    .info h2{
+    h2{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 20px;
     }
-    .info p{
+    p{
         font-family:monospace;
         text-align: justify;
         font-size: 10px;
