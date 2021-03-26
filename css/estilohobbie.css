@@ -327,11 +327,10 @@ h1{
     text-align: center;
     grid-area: disney;
 }
-.p{
-    width: 90%;
-    height: 90%;
-}
 
+.peliculas img{
+    width:100px;
+}
 /**=============================*/
 /**===========Juegos============*/
 /**=============================*/
@@ -433,6 +432,15 @@ h5{
                              "rl ";
                             
     }
+    .info h2{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 20px;
+    }
+    .info p{
+        font-family:monospace;
+        text-align: justify;
+        font-size: 10px;
+    }
     .videos  {
    
         width: 90%;
@@ -449,25 +457,7 @@ h5{
                              "t2  t2 ";
                             
     }
-    .peliculas  {
-   
-        width: 90%;
-        max-width: auto ;
-        margin: 30px auto;
-        display: grid;
-        grid-gap: 20px;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, auto);
     
-        grid-template-areas: "header3 "
-                            "infopelis "
-                             "netflix "
-                             " amazon "
-                             "disney"
-                             "infopelis2 "
-                             
-                            
-    }
     .p{
         width: 50%;
         height: 50%;
@@ -489,4 +479,5 @@ h5{
         width: fit-content;
         
     }
+    
 } 
