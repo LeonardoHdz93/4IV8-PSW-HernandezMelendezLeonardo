@@ -479,5 +479,7 @@ h5{
         width: fit-content;
         
     }
-    
+    body{
+        background-color: aqua;
+    }
 } 
