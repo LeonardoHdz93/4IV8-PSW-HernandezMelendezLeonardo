@@ -26,30 +26,7 @@ h5{
     color: black;
     font-size: small;
 }
-i.edad{
-    padding-left: 20%;
-   
-    font-size: 25px;
-}
-i.nss{
-    padding-top: 30px;
-    padding-right: 10%;
-    
-    font-size: 25px;
-    
-}
-i.correo{
-    padding-top: 30px;
-    padding-left: 5%;
-   
-    font-size: 25px;
-}
-i.telefono{
-    padding-right: 20%;
-    
-    font-size: 25px;
-}
-/**=============================*/
+/*=============================*/
 /**==========HEADER=============*/
 /**=============================*/
 
@@ -138,6 +115,8 @@ i.telefono{
     grid-area: header;
 }
 .container .contenido{
+    margin-right: 20px;
+    margin-left: 20px;
     border:solid 5px black;
     grid-area: contenido;
     text-align: center;
@@ -157,6 +136,8 @@ i.telefono{
 /*preparatoria*/
 
 .container .contenido2{
+    margin-right: 20px;
+    margin-left: 20px;
     border:solid 5px black;
     grid-area: contenido2;
     text-align: center;
