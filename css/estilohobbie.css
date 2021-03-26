@@ -150,10 +150,7 @@ h1{
     text-align: center;
     grid-area: rocket;
 }
-.f{
-    width: 70%;
-    height: 70%;
-}
+
 /**=============================*/
 /**======CONTENEDOR IMAGEN=======*/
 /**=============================*/
@@ -328,7 +325,9 @@ h1{
     grid-area: disney;
 }
 
-.peliculas img{
+.peliculas img.p,
+.menu img
+{
     width:100px;
 }
 /**=============================*/
@@ -475,7 +474,7 @@ h5{
                             "juegosinfo "
                              
     }
-    .juegos-de-mesa > div,
+.juegos-de-mesa > div,
 .injuegos-de-mesafo .header4,
 .juegos-de-mesa .juegosinfo
 
@@ -493,7 +492,7 @@ h5{
     text-align: center;
     grid-area: juegosinfo;
 }
-.juegos-de-mesa .juegosinfo img{
+ img.r{
     width: 250px;
 }
     .p {
@@ -501,7 +500,7 @@ h5{
         
     }
     body{
-        background-color: rgb(121, 4, 255);
+        background-color: rgb(4, 255, 12);
     }
 
 } 
