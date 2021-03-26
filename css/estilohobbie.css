@@ -18,8 +18,12 @@ html{
 }
 
 body{
+    background-color: #a0a0a0;
     font-family: 'Courier New', Courier, monospace;
     
+}
+h1{
+    font-size: 40px;
 }
 
 /**=============================*/
@@ -79,6 +83,7 @@ body{
 /**======CONTENEDOR IMAGEN=======*/
 /**=============================*/
 .menu{
+    
     width: 90%;
     max-width: auto ;
     margin: 30px auto;
@@ -123,9 +128,187 @@ body{
     width: 70%;
     height: 70%;
 }
+/**=============================*/
+/**======CONTENEDOR IMAGEN=======*/
+/**=============================*/
+.info  {
+   
+    width: 90%;
+    max-width: auto ;
+    margin: 30px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+
+    grid-template-areas: "fort fort fort"
+                         "wz wz wz"
+                         "rl rl rl";
+                        
+}
+
+.info > div,
+.info .fort,
+.info .warz,
+.info .rocketl
+{
+    padding: 20px;
+    border-radius: 4px;
+}
+.info .fort{
+    
+    text-align: center;
+    grid-area: fort;
+}
+.info .warz{
+    
+    text-align: center;
+    grid-area: wz;
+}
+.info .rocketl{   
+    
+    text-align: center;
+    grid-area: rl;
+}
+
+
+/**=============================*/
+/**======CONTENEDOR IMAGEN=======*/
+/**=============================*/
+.info h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+.info p{
+    font-family:monospace;
+    text-align: justify;
+    font-size: 20px;
+}
 
 
 
+/**=============================*/
+/**======CONTENEDOR IMAGEN=======*/
+/**=============================*/
+.videos  {
+   
+    width: 90%;
+    max-width: auto ;
+    margin: 30px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "header2 header2 "
+                         "vi vi "
+                         "youtube  tiktok"
+                         "t2  t2 ";
+                        
+}
+.videos > div,
+.videos .header2,
+.videos .videoinfo,
+.videos .yi,
+.videos .tk1,
+.videos .videoinfo2
+{
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.videos .header2{
+    text-align: center;
+    grid-area: header2;
+}
+.videos .videoinfo{
+    text-align: center;
+    grid-area: vi;
+}
+.videos .yi{
+    text-align: center;
+    grid-area: youtube;
+}
+.videos .tk1{
+    text-align: center;
+    grid-area: tiktok;
+}
+.videos .videoinfo2{
+    text-align: center;
+    grid-area: t2;
+}
+
+
+.videos img{
+    width:100px;
+}
+/**=============================*/
+/**======CONTENEDOR IMAGEN=======*/
+/**=============================*/
+.peliculas  {
+   
+    width: 90%;
+    max-width: auto ;
+    margin: 30px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "header3 header3 header3"
+                        "infopelis infopelis infopelis"
+                         "netflix amazon disney"
+                         "infopelis2 infopelis2 infopelis2"
+                         "accion accion accion"
+                         "ciencia-ficcion ciencia-ficcion ciencia-ficcion"
+                         "suspenso suspenso suspenso"
+                         "comedia comedia comedia";
+                        
+}
+.peliculas > div,
+.peliculas .header3,
+.peliculas .infopelis,
+.peliculas .infopelis2,
+.peliculas .netflix,
+.peliculas .amazon,
+.peliculas .disney
+{
+    padding: 20px;
+    border-radius: 4px;
+}
+.peliculas .header3{
+    text-align: center;
+    grid-area: header3;
+}
+.peliculas .infopelis{
+    
+    text-align: center;
+    grid-area: infopelis;
+}
+.peliculas .infopelis2{
+    
+    text-align: center;
+    grid-area: infopelis2;
+}
+.peliculas .netflix{   
+    
+    text-align: center;
+    grid-area: netflix;
+}
+.peliculas .amazon{
+    
+    text-align: center;
+    grid-area: amazon;
+}
+.peliculas .disney{   
+    
+    text-align: center;
+    grid-area: disney;
+}
+.f{
+    width: 70%;
+    height: 70%;
+}
 /**=============================*/
 /**===========FOOTER============*/
 /**=============================*/
@@ -146,7 +329,7 @@ h5{
     display: inline-block;
 }
 
-img{
+.footer img{
     width: 30px;
 }
 /* * ============================== */
@@ -175,9 +358,55 @@ img{
         position: static;
 
     }
+    
+    .info  {
+   
+        width: 90%;
+        max-width: auto ;
+        margin: 30px auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, auto);
+    
+        grid-template-areas: "fort "
+                             "wz"
+                             "rl ";
+                            
+    }
+    .videos  {
+   
+        width: 90%;
+        max-width: auto ;
+        margin: 30px auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+    
+        grid-template-areas: "header2 header2 "
+                             "vi vi "
+                             "youtube  tiktok"
+                             "t2  t2 ";
+                            
+    }
+    .peliculas  {
+   
+        width: 90%;
+        max-width: auto ;
+        margin: 30px auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, auto);
+    
+        grid-template-areas: "header3 "
+                            "infopelis "
+                             "netflix"
+                             " amazon"
+                             "disney"
+                             "infopelis2 "
+                             
+                            
+    }
 } 
-
-
-.menu{
-    border: solid 2px #000;
-}
