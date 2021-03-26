@@ -468,6 +468,23 @@ h5{
                              
                             
     }
+    .p{
+        width: 50%;
+        height: 50%;
+    }
+    .juegos-de-mesa{        
+        width: 90%;
+        max-width: auto ;
+        margin: 30px auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, auto);
+    
+        grid-template-areas: "header4 "
+                            "juegosinfo "
+                             
+    }
     .p {
         width: fit-content;
         
