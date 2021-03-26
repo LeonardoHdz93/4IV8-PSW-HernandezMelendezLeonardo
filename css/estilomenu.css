@@ -1,0 +1,61 @@
+*{
+   
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    
+}
+body{
+    background-color: #cacaca;
+    text-decoration-line: none;
+}
+a{
+    color: #000;
+    text-decoration: none;
+    
+}
+.problemas:hover,
+.problemas:hover a {
+    background-color: #1d2f3d;
+    color: #cacaca;
+    text-decoration: none;
+}
+.contenido :hover,
+.contenido :hover a{
+    background-color: #1d2f3d;
+    color: #cacaca;
+    text-decoration: none;
+}
+header.principal{
+    min-height: 100px;
+    padding: 45px;
+    text-align: center;
+    background-color: rgb(255, 204, 0);
+
+    font-size: 50px;
+    
+
+}
+div.contenido{
+    width: 90%;
+    max-width: auto ;
+    margin: 30px auto;
+    font-size: 30px ;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+
+    grid-template-areas:"curriculum problemas"
+}
+div.curriculum{
+    width: 100%;
+    text-align: center;
+    border: solid 2px #000;
+    border-radius: 20px;
+}
+div.problemas{
+    text-align: center;
+    border: solid 2px #000;
+    border-radius:20px;
+}
