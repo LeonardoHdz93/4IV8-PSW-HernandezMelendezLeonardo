@@ -28,25 +28,25 @@ h5{
 }
 i.edad{
     padding-left: 20%;
-    float: left;
+   
     font-size: 25px;
 }
 i.nss{
     padding-top: 30px;
     padding-right: 10%;
-    float: right;
+    
     font-size: 25px;
     
 }
 i.correo{
     padding-top: 30px;
     padding-left: 5%;
-    float: left;
+   
     font-size: 25px;
 }
 i.telefono{
     padding-right: 20%;
-    float: right;
+    
     font-size: 25px;
 }
 /**=============================*/
@@ -134,7 +134,7 @@ i.telefono{
 .container .header{
     text-align: center;
     display: inline;
-    float: right;
+    
     grid-area: header;
 }
 .container .contenido{
@@ -142,7 +142,7 @@ i.telefono{
     grid-area: contenido;
     text-align: center;
     display: inline;
-    float: right;
+    
 }
 .container .sidebar{
     
@@ -161,13 +161,13 @@ i.telefono{
     grid-area: contenido2;
     text-align: center;
     display: inline;
-    float: right;
+    
 }
 .container .sidebar2{
     
     text-align: center;
     display: inline;
-    float: left;
+   
     grid-area: sidebar2;
 }
 
@@ -209,7 +209,7 @@ footer{
 /* * ============================== */
 /* * ====== MEDIA QUERIES ========= */
 /* * ============================== */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px){
 	.navbar .contenedor {
 		flex-wrap: wrap;
 		margin: 0;
@@ -225,8 +225,42 @@ footer{
 		height: 50vh;
 	}
 
-	 .contenedor {
+	 .container {
 		flex-direction: column;
 	}
-   
-} 
+    .container {
+        width: 100%;
+        max-width: auto ;
+        margin: 30px auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, auto);
+    
+        grid-template-areas: "header "
+                            "sidebar "
+                            "contenido "                   
+                            "sidebar2"
+                            "contenido2"
+                            "footer";
+    }
+    .container .header{
+        text-align: center;
+        display: inline;
+        
+        grid-area: header;
+    }
+    .container .contenido{
+        border:solid 5px black;
+        grid-area: contenido;
+        text-align: center;
+        display: inline;
+        
+    }
+    .container .sidebar{
+        
+        text-align: center;
+        display: inline;
+        float: left;
+        grid-area: sidebar;
+    }
