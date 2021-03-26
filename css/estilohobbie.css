@@ -493,11 +493,15 @@ h5{
     text-align: center;
     grid-area: juegosinfo;
 }
+.juegos-de-mesa .juegosinfo img{
+    width: 200px;
+}
     .p {
         width: fit-content;
         
     }
     body{
-        background-color: rgb(16, 255, 4);
+        background-color: rgb(255, 4, 4);
     }
+
 } 
