@@ -278,13 +278,13 @@ h1{
     margin: 30px auto;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, auto);
 
-    grid-template-areas: "header3 header3 header3"
-                        "infopelis infopelis infopelis"
-                         "netflix amazon disney"
-                         "infopelis2 infopelis2 infopelis2"                         ;
+    grid-template-areas: " header3 header3 header3 header3 header3 header3"
+                        "infopelis infopelis infopelis infopelis infopelis infopelis"
+                         "netflix netflix amazon amazon disney disney"
+                         "infopelis2 infopelis2 infopelis2 infopelis2 infopelis2 infopelis2"                         ;
                         
 }
 .peliculas > div,
@@ -480,6 +480,6 @@ h5{
         
     }
     body{
-        background-color: aqua;
+        background-color: rgb(55, 12, 208);
     }
 } 
