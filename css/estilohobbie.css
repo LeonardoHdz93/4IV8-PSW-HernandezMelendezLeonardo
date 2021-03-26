@@ -78,7 +78,33 @@ h1{
     object-fit: cover;
     object-position: 0 bottom;
 }
+/**=============================*/
+/**======CONTENEDOR IMAGEN=======*/
+/**=============================*/
+.volver{
+    
+    width: 90%;
+    max-width: auto ;
+    margin: 30px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(1, auto);
 
+    grid-template-areas: "contenido contenido contenido contenido contenido contenido contenido contenido flecha";
+                        
+}
+.flecha{
+    grid-area: flecha;
+    width: 30px;
+    text-align: right;
+    margin: 30%;
+    position: sticky;
+    top: 90%;
+}
+.volver .contenido{
+    grid-area: contenido;
+}
 /**=============================*/
 /**======CONTENEDOR IMAGEN=======*/
 /**=============================*/
@@ -90,7 +116,7 @@ h1{
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
 
     grid-template-areas: "header header header"
                         "fortnite warzone rocket";
@@ -258,11 +284,7 @@ h1{
     grid-template-areas: "header3 header3 header3"
                         "infopelis infopelis infopelis"
                          "netflix amazon disney"
-                         "infopelis2 infopelis2 infopelis2"
-                         "accion accion accion"
-                         "ciencia-ficcion ciencia-ficcion ciencia-ficcion"
-                         "suspenso suspenso suspenso"
-                         "comedia comedia comedia";
+                         "infopelis2 infopelis2 infopelis2"                         ;
                         
 }
 .peliculas > div,
@@ -305,9 +327,46 @@ h1{
     text-align: center;
     grid-area: disney;
 }
-.f{
-    width: 70%;
-    height: 70%;
+.p{
+    width: 90%;
+    height: 90%;
+}
+
+/**=============================*/
+/**===========Juegos============*/
+/**=============================*/
+.juegos-de-mesa  {
+   
+    width: 90%;
+    max-width: auto ;
+    margin: 30px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+
+    grid-template-areas: "header4 header4 header4"
+                         "infojuegos infojuegos infojuegos";
+                        
+}
+
+.juegos-de-mesa > div,
+.injuegos-de-mesafo .header4,
+.juegos-de-mesa .juegosinfo
+
+{
+    padding: 20px;
+    border-radius: 4px;
+}
+.juegos-de-mesa .header4{
+    
+    text-align: center;
+    grid-area: header4;
+}
+.juegos-de-mesa .juegosinfo{
+    
+    text-align: center;
+    grid-area: infojuegos;
 }
 /**=============================*/
 /**===========FOOTER============*/
@@ -397,16 +456,20 @@ h5{
         margin: 30px auto;
         display: grid;
         grid-gap: 20px;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, auto);
     
-        grid-template-areas: "header3 "
+        grid-template-areas: "header3 header3 header3"
                             "infopelis "
-                             "netflix"
-                             " amazon"
+                             "netflix netflix netflix"
+                             " amazon amazon amazon"
                              "disney"
                              "infopelis2 "
                              
                             
+    }
+    .p {
+        width: fit-content;
+        
     }
 } 
