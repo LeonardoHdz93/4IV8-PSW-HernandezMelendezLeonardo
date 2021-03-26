@@ -18,10 +18,37 @@ html{
 }
 
 body{
+    background-color: #cacaca;
     font-family: 'Courier New', Courier, monospace;
     
 }
-
+h5{
+    color: black;
+    font-size: small;
+}
+i.edad{
+    padding-left: 20%;
+    float: left;
+    font-size: 25px;
+}
+i.nss{
+    padding-top: 30px;
+    padding-right: 10%;
+    float: right;
+    font-size: 25px;
+    
+}
+i.correo{
+    padding-top: 30px;
+    padding-left: 5%;
+    float: left;
+    font-size: 25px;
+}
+i.telefono{
+    padding-right: 20%;
+    float: right;
+    font-size: 25px;
+}
 /**=============================*/
 /**==========HEADER=============*/
 /**=============================*/
@@ -75,72 +102,88 @@ body{
     object-position: 0 bottom;
 }
 
-/**=============================*/
-/**======NOMBRE Y BIENVENIDA=======*/
-/**=============================*/
-.nombre_h1 {
-    color: white;
-}
 
 /**=============================*/
-/**======CONTENEDOR IMAGEN=======*/
+/**======CONTENEDOR =======*/
 /**=============================*/
+.container {
+    width: 100%;
+    max-width: auto ;
+    margin: 30px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
 
-main {
-	min-height: 90vh;
+    grid-template-areas: "header header header"
+                        "sidebar contenido contenido"                        
+                        "sidebar2 contenido2 contenido2"
+                        "footer footer footer";
+}
+.container > div,
+.container .header,
+.container .contenido,
+.container .contenido2,
+.container .sidebar,
+.container .sidebar2,
+.container .footer{
+    
+    padding: 20px;
+    border-radius: 4px;
+}
+.container .header{
+    text-align: center;
+    display: inline;
+    float: right;
+    grid-area: header;
+}
+.container .contenido{
+    border:solid 5px black;
+    grid-area: contenido;
+    text-align: center;
+    display: inline;
+    float: right;
+}
+.container .sidebar{
+    
+    text-align: center;
+    display: inline;
+    float: left;
+    grid-area: sidebar;
 }
 
-main .contenido p {
-	margin-bottom: 20px;
-	line-height: 30px;
-	color: #525151;
+
+
+/*preparatoria*/
+
+.container .contenido2{
+    border:solid 5px black;
+    grid-area: contenido2;
+    text-align: center;
+    display: inline;
+    float: right;
+}
+.container .sidebar2{
+    
+    text-align: center;
+    display: inline;
+    float: left;
+    grid-area: sidebar2;
 }
 
-main .contenido .titulo {
-    font-family: 'Montserrat', sans-serif;
-	font-weight: normal;
-	padding-top: 40px;
-}
-
-main .contenido .fecha {
-	font-size: 14px;
-	color: rgb(29, 48, 62);
-    font-weight: lighter;
-}
-
-main.container{
-    background-color: #cacaca;
-    width: 90vw;
+.container .footer{
+    grid-area: footer;
 }
 /* * ============================== */
-/* * ============ ASIDE =========== */
+/* * === Estilo letra e imagenes ===*/
 /* * ============================== */
-
-aside {
-	min-width: 30%;
-	margin: 40px 20px 20px 0;
-	height: 100%;
-	background: #1D2F3D;
-	padding: 20px;
-	border-radius: 3px;
-    position: sticky;
-    top: 20px;
+.sidebar img{
+    border-radius: 50%;
+    width: 100px;
 }
 
-aside .titulo {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: normal;
-	font-size: 24px;
-	margin-bottom: 20px;
-	color: #f2f2f2;
-}
 
-aside .indice a {
-	display: block;
-	margin-bottom: 10px;
-	color: #FFCD48;
-    font-size: 15px;
-}
+
 
 /* * ============================== */
 /* * ========== FOOTER ============ */
@@ -152,24 +195,21 @@ footer{
     background-color: #a0a0a0;
     text-align: center;
 }
-h5{
-    color: black;
-    font-size: x-large;
-}
+
 
 .list-inline a{
     display: inline-block;
 }
 
-img{
-    width: 80px;
+.list-inline img{
+    width: 30px;
 }
 
 
 /* * ============================== */
 /* * ====== MEDIA QUERIES ========= */
 /* * ============================== */
-@media screen and (max-width: 900px){
+@media screen and (max-width: 768px){
 	.navbar .contenedor {
 		flex-wrap: wrap;
 		margin: 0;
@@ -185,11 +225,8 @@ img{
 		height: 50vh;
 	}
 
-	main .contenedor {
+	 .contenedor {
 		flex-direction: column;
 	}
-    aside{
-        position: static;
-
-    }
+   
 } 
