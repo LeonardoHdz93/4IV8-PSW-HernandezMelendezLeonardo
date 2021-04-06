@@ -1,0 +1,57 @@
+body{
+    background-color: #cacaca;
+}
+header.principal{
+    box-sizing: border-box;
+    
+    padding: 45px;
+    text-align: center;
+    background-color: rgb(255, 204, 0);
+    
+    
+}
+header.titulo{
+    margin: 40px;
+    text-align: center;
+}
+a{
+    color: #009999;
+    text-decoration: none;
+}
+table{
+    background-color: #0f6377f8 ;
+    color: #cacaca;
+    font-size: 20px;
+}
+.td_sup{
+    font-size: 15px;
+    align-items: center;
+    width: 100;
+    justify-content: center;
+}
+
+.td_inf{
+    align-items: center;
+    justify-content: center;
+    width: 150;
+}
+
+.input_text{
+    background-color: #0f6377f8 ;
+    align-items: center;
+    justify-content: center;
+    size: 12;
+    
+    color: #ffbf0f;
+    letter-spacing: 3px;
+    font-size: 15px;
+
+}
+
+
+p{
+    font-size: 26px;
+    text-align: center;
+    justify-content: center;
+    color: #000000;
+}

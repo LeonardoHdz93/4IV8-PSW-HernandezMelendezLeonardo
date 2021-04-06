@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 3 </title>
+    <link rel="stylesheet" href="./../css/problemas-css/problema3.css">
+    <script src="./../js/problemasjs/problema3.js"></script>
+</head>
+<body>
+    <Header class="principal">
+        <h1>Problema 3</h1>
+    </Header>
+    <div class="contenido">
+        <header class="titulo">
+            <h2>Calcular el total a pagar por su compra </h2>
+        </header>
+        <form method="POST" name="formulario" onsubmit="return validarn(this)" action="problema01.html" align=center>
+            
+                    <p class="td_sup" id="articulos"> Introduce la cantidad de productos que vas a comprar </td>
+                    <input type="text" name="cantidad"
+                        onkeypress="return validarn(event)">
+                <br>
+                
+                        
+
+                    <input type="button" value="Total" 
+                        name="enviar" onclick="ftotal()">
+                <br>
+                
+                   <p class="td_sup" id="invisible"> El subtotal de su compra es de:  
+                    <input type="text" name="subtotal"
+                        id="cantidadi" readonly="readonly"
+                        class="input_text">
+                    <br> 
+
+                    <p class="td_sup" id="invisible"> Su total a pagar es de:  
+                        <input type="text" name="total"
+                            id="cantidadi" readonly="readonly"
+                            class="input_text">
+                        <br> 
+                
+                    <input type="button" value="Borrar"
+                         name="borrar" onclick="borrar1()"> 
+                </tr>           
+            </table>
+        </form>
+        <br>
+        <a href="./problemas.html"> Regresar  </a> al menu de problemas
+    </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+body{
+    background-color: #cacaca;
+}
+header.principal{
+    box-sizing: border-box;
+    
+    padding: 45px;
+    text-align: center;
+    background-color: #ffcc00;
+    
+    
+}
+header.titulo{
+    margin: 40px;
+    text-align: center;
+}
+a{
+    color: #009999;
+    text-decoration: none;
+}
+
+p{
+    font-size: 26px;
+    text-align: center;
+    justify-content: center;
+    color: #000000;
+}
+div{
+    font-size: 15px;
+    align-items: center;
+    width: 100;
+    justify-content: center;
+    display: block;
+}
+#texto,
+#texto2,
+#final{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    align-items: center;
+    width: 100;
+    justify-content: center;
+    display: block;
+}
+#formulario__antiguedad{
+    margin: 5px;
+    display: block;
+}
+#error_dato_antiguedad{
+    padding: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    border: #bb2929;
+    border-radius: 15px;
+    background-color: #bb2929;
+    font-size: 15px;
+    color: #000000;
+    display: none;
+}
+#error_borrar_antiguedad{
+    text-align: center;
+    background-color: #bb2929;
+    color: #000000;
+    display: none;
+}
+#formulario__sueldo{
+    display: none;
+}
+#total{
+    display: none;
+}
+#introduce_texto1{
+    margin: 10px;
+    width: 15%;
+	background-color: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 40px 0 10px;
+	transition: .4s ease all;
+}
+#introduce_texto1:focus{
+    border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 15px 0 30px rgba(163, 163, 163, 0.4);
+}
+#resultado{
+    margin: 10px;
+    width: auto;
+    background-color: #0f6377f8;
+	color:#ffcc00 ;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 40px 0 10px;
+	transition: .4s ease all;
+}
+#Botones{
+    height: 25px;
+	line-height: 25px;
+	width: 8%;
+	background-color: #383838;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1 ease all;
+}
+#Botones:hover{
+    
+	background-color: #000000;
+	
+}
+#error__dato,
+#error__dato2
+{
+    height: 45px;
+    width: 20%;
+	line-height: 45px;
+	background-color: #f66860;
+	padding: 0 15px;
+    margin-bottom: 10px;
+	border-radius: 5px;
+    display: none;
+}
+#error__borrar_dato,
+#error__borrar_dato2
+{
+    height: 45px;
+    width: 25%;
+	line-height: 45px;
+	background-color: #f66860;
+	padding: 0 15px;
+    margin-bottom: 10px;
+	border-radius: 5px;
+    display: none;
+    
+}
+
+
+.texto-error{
+    color: #fc0d00;
+}
+.texto-error2{
+    color: #fc0d00;
+}
+.error_dato_antiguedad{
+    display: none;
+}
+.error_dato_antiguedad-activo{
+    display: block;
+}

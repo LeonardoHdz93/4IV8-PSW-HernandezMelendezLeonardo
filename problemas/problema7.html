@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problema 7</title>
+    <link rel="stylesheet" href="./../css/problemas-css/problema7.css">
+    <script src="./../js/problemasjs/problema7.js"></script>
+</head>
+<body>
+    <Header class="principal">
+        <h1>Problema 7</h1>
+    </Header>
+    <div class="contenido">
+        <header class="titulo">
+            <h2>Calcular el total del dinero que se va a tener al finalizar el tiempo de tu inversion</h2>
+        </header>
+        <form method="POST" name="formulario" onsubmit="return validarn(this)" action="problema01.html" align=center>
+            
+            <div id="numero1" align="center">
+                <b class="td_sup"> Inserte un numero <br><br>
+                <input for="calificacion_parcial1" type="text" name="num1" onkeypress="return validarn(event)" maxlength="4" placeholder="0000"> <br> <br>
+                <input type="button" value="Siguiente" onclick="Siguientenumero()" name="siguiente" id="siguiente2"> 
+            </div>
+            <div id="numero2" align="center">
+                <b class="td_sup"> Inserte otro numero <br><br>
+                <input for="calificacion_parcial1" type="text" name="num2" onkeypress="return validarn(event)" maxlength="4" placeholder="0000"> <br><br>
+                <input type="button" value="Continuar" onclick="continuarf()" name="siguiente" id="siguiente2">
+            </div>
+            <div id="total">
+                <p class="td_sup" id="final"> Resultado <br><br>
+                <input type="text" name="total" readonly="readonly" id="cantidadi" class="input_text">
+                    <br>
+                <input type="button" value="Borrar" name="borrar" onclick="borrar1()">                                
+                    
+            </div>
+            </form>
+            </div>
+        <br>
+        <a href="./problemas.html"> Regresar  </a> al menu de problemas
+</body>
+</html>

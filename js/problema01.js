@@ -3,7 +3,6 @@ Vamos a crear una funcion que se encargue
 de que solo se admitan numeros
 */
 
-
 function validarn(e){
     var teclado = (document.all)?e.keyCode:e.which;
     if(teclado == 8)return true;

@@ -14,18 +14,54 @@ color: #000;
 text-decoration: none;
 
 }
-.problemas:hover,
-.problemas:hover a {
-background-color: #1d2f3d;
-color: #cacaca;
-text-decoration: none;
+.regresar{
+    margin-left: 5%;
+    color: #009999;
+    text-decoration: none;
+    font-size: 20px;
 }
-.contenido :hover,
-.contenido :hover a{
-background-color: #1d2f3d;
-color: #cacaca;
-text-decoration: none;
+
+p{
+    font-size: 26px;
+    text-align: center;
+    justify-content: center;
+    color: #000000;
 }
+div.menu{
+    width: 90%;
+    max-width: auto ;
+    margin: 30px auto;
+    font-size: 30px ;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    
+    grid-template-areas:"problemas problemas problemas "
+                        "problemas problemas problemas "
+                        "problemas problemas problemas "
+                        "problemas problemas problemas ";
+    }
+.formulario__btn{
+	height: 45px;
+	line-height: 45px;
+	width: 100%;
+	background-color: #cacaca;
+	color: #1d2f3d;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1 ease all;
+    border: solid 2px #000;
+    border-radius:20px;
+    grid-area: problemas;
+    font-size: 20px;
+}
+.formulario__btn:hover{
+	background-color: #1d2f3d ;
+    color: #cacaca;
+}
+
 header.principal{
 min-height: 100px;
 padding: 45px;
@@ -33,28 +69,6 @@ text-align: center;
 background-color: rgb(255, 204, 0);
 
 font-size: 50px;
-
-
-}
-div.menu{
-width: 90%;
-max-width: auto ;
-margin: 30px auto;
-font-size: 30px ;
-display: grid;
-grid-gap: 20px;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(4, auto);
-
-grid-template-areas:"problemas problemas problemas "
-                    "problemas problemas problemas "
-                    "problemas problemas problemas "
-                    "problemas problemas problemas ";
 }
 
-div.problemas{
-text-align: center;
-border: solid 2px #000;
-border-radius:20px;
 
-}

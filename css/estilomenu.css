@@ -14,18 +14,7 @@ a{
     text-decoration: none;
     
 }
-.problemas:hover,
-.problemas:hover a {
-    background-color: #1d2f3d;
-    color: #cacaca;
-    text-decoration: none;
-}
-.contenido :hover,
-.contenido :hover a{
-    background-color: #1d2f3d;
-    color: #cacaca;
-    text-decoration: none;
-}
+
 header.principal{
     min-height: 100px;
     padding: 45px;
@@ -58,4 +47,23 @@ div.problemas{
     text-align: center;
     border: solid 2px #000;
     border-radius:20px;
+}
+.formulario__btn{
+	height: 45px;
+	line-height: 45px;
+	width: 100%;
+	background-color: #cacaca;
+	color: #1d2f3d;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1 ease all;
+    border: solid 2px #000;
+    border-radius:20px;
+    grid-area: problemas;
+    font-size: 20px;
+}
+.formulario__btn:hover{
+	background-color: #1d2f3d ;
+    color: #cacaca;
 }

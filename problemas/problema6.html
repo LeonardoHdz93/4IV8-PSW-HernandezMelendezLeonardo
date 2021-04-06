@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problema 6</title>
+    <link rel="stylesheet" href="./../css/problemas-css/problema6.css">
+    <script src="./../js/problemasjs/problema6.js"></script>
+</head>
+<body>
+    <Header class="principal">
+        <h1>Problema 6</h1>
+    </Header>
+    <div class="contenido">
+        <header class="titulo">
+            <h2>Calcular su edad </h2>
+        </header>
+        <form method="POST" name="formulario" onsubmit="return validarn(this)" action="problema01.html" align=center>
+    <!-- FECHA DE NACIMIENTO -->
+            <div id="ano_nacimiento" align="center">
+                <b class="td_sup"> Inserte su año de nacimiento  <br><br>
+                <input for="calificacion_parcial1" type="text" name="año_n" onkeypress="return validarn(event)" maxlength="4" placeholder="0000"> <br> <br>
+                <input type="button" value="Siguiente" onclick="SiguienteMesCumpleaños()" name="siguiente" id="siguiente3"> 
+                <input type="button" value="Borrar" name="borrar" onclick="BorrarAnoCumpleaños()">
+            </div>            
+            <div id="mes_nacimiento" align="center">
+                <b class="td_sup"> Inserte su mes de nacimiento <br><br>
+                <input for="calificacion_parcial1" type="text" name="mes_n" onkeypress="return validarn(event)" maxlength="2" placeholder="00"> <br><br>
+                <input type="button" value="Regresar" name="borrar" onclick="RegresarAñoCumpleaños()">
+                <input type="button" value="Siguiente" onclick="SiguienteDiaCumpleaños()" name="siguiente" id="siguiente2">
+                <input type="button" value="Borrar" name="borrar" onclick="BorrarMesCumpleaños()">
+                
+            </div>
+            <div id="dia_nacimiento" align="center">
+                <b class="td_sup"> Inserte su día de nacimiento  <br><br>
+                <input for="calificacion_parcial1" type="text" name="dia_n" onkeypress="return validarn(event)" maxlength="2" placeholder="00"> <br> <br>
+                <input type="button" value="Regresar" name="borrar" onclick="RegresarMesCumpleaños()">
+                <input type="button" value="Siguiente" onclick="SiguienteAñoActual()" name="siguiente" id="siguiente1"> 
+                <input type="button" value="Borrar" name="borrar" onclick="BorrarDiaCumpleaños()">
+            </div>
+            
+    <!-- FECHA DE NACIMIENTO -->
+            <div id="ano_actual" align="center">
+                <b class="td_sup"> Inserte el año actual <br><br>
+                <input for="calificacion_parcial1" type="text" name="año_a" onkeypress="return validarn(event)" maxlength="4" placeholder="0000"> <br> <br>
+                <input type="button" value="Regresar" name="borrar" onclick="RegresarDiaCumpleaños()">
+                <input type="button" value="Siguiente" onclick="SiguienteMesActual()" name="siguiente" id="siguiente3"> 
+                <input type="button" value="Borrar" name="borrar" onclick="BorrarAnoActual()">
+            </div>
+            
+            <div id="mes_actual" align="center">
+                <b class="td_sup"> Inserte el mes actual <br><br>
+                <input for="calificacion_parcial1" type="text" name="mes_a" onkeypress="return validarn(event)" maxlength="2" placeholder="00"> <br><br>
+                <input type="button" value="Regresar" name="borrar" onclick="RegresarAñoActual()">
+                <input type="button" value="Siguiente" onclick="SiguienteDiaActual()" name="siguiente" id="siguiente2">
+                <input type="button" value="Borrar" name="borrar" onclick="BorrarMesActual()">
+            </div>
+            <div id="dia_actual" align="center">
+                <b class="td_sup"> Inserte el día actual  <br><br>
+                <input for="calificacion_parcial1" type="text" name="dia_a" onkeypress="return validarn(event)" maxlength="2" placeholder="00"> <br> <br>
+                <input type="button" value="Regresar" name="borrar" onclick="RegresarAño()">
+                <input type="button" value="Siguiente" onclick="CalcularEdad()" name="siguiente" id="siguiente1"> 
+                <input type="button" value="Borrar" name="borrar" onclick="borrar1()">
+            </div>
+            <div id="total">
+                <p class="td_sup" id="final"> Tienees  <br><br>
+                <input type="text" name="edad" readonly="readonly" id="cantidadi" class="input_text">
+                    <br>
+                <input type="button" value="Borrar" name="borrar" onclick="BorrarTodo()">                                
+                    
+            </div>
+            </form>
+            </div>
+        <br>
+        <a href="./problemas.html"> Regresar  </a> al menu de problemas
+</body>
+</html>
