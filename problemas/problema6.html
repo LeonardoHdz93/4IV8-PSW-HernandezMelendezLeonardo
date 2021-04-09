@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>problema 6</title>
+    <script src="https://kit.fontawesome.com/81aab4573e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./../css/problemas-css/problema6.css">
     <script src="./../js/problemasjs/problema6.js"></script>
 </head>
@@ -19,55 +20,103 @@
         <form method="POST" name="formulario" onsubmit="return validarn(this)" action="problema01.html" align=center>
     <!-- FECHA DE NACIMIENTO -->
             <div id="ano_nacimiento" align="center">
-                <b class="td_sup"> Inserte su año de nacimiento  <br><br>
-                <input for="calificacion_parcial1" type="text" name="año_n" onkeypress="return validarn(event)" maxlength="4" placeholder="0000"> <br> <br>
-                <input type="button" value="Siguiente" onclick="SiguienteMesCumpleaños()" name="siguiente" id="siguiente3"> 
-                <input type="button" value="Borrar" name="borrar" onclick="BorrarAnoCumpleaños()">
+                <label class="td_sup" id="año_nacimiento_texto"> Inserte su año de nacimiento </label>          
+                <input type="text" name="año_n" id="ingresar_texto" onkeypress="return validarn(event)" maxlength="4" placeholder="0000"><br>
+
+                <div id="error__dato" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> Ingresa un dato valido para continuar 
+                </div>
+                <div id="error__borrar_dato" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> El campo no contiene ningun dato para eliminar
+                </div>
+
+                <input type="button" id="Botones" value="Siguiente" onclick="SiguienteMesCumpleaños()" name="siguiente" id="siguiente3"> 
+                <input type="button" id="Botones" value="Borrar" name="borrar" onclick="BorrarAnoCumpleaños()">
             </div>            
             <div id="mes_nacimiento" align="center">
-                <b class="td_sup"> Inserte su mes de nacimiento <br><br>
-                <input for="calificacion_parcial1" type="text" name="mes_n" onkeypress="return validarn(event)" maxlength="2" placeholder="00"> <br><br>
-                <input type="button" value="Regresar" name="borrar" onclick="RegresarAñoCumpleaños()">
-                <input type="button" value="Siguiente" onclick="SiguienteDiaCumpleaños()" name="siguiente" id="siguiente2">
-                <input type="button" value="Borrar" name="borrar" onclick="BorrarMesCumpleaños()">
+               <label class="td_sup" id="mes_nacimiento_texto"> Inserte su mes de nacimiento </label>
+                <input type="text" name="mes_n" id="ingresar_texto" onkeypress="return validarn(event)" maxlength="2" placeholder="00"><br>
+
+                <div id="error__dato2" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> Ingresa un valor entre 01 y 12 
+                </div>
+                <div id="error__borrar_dato2" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> El campo no contiene ningun dato para eliminar
+                </div>
+
+                <input type="button" id="Botones" value="Regresar" name="borrar" onclick="RegresarAñoCumpleaños()">
+                <input type="button" id="Botones" value="Siguiente" onclick="SiguienteDiaCumpleaños()" name="siguiente" id="siguiente2">
+                <input type="button" id="Botones" value="Borrar" name="borrar" onclick="BorrarMesCumpleaños()">
                 
             </div>
             <div id="dia_nacimiento" align="center">
-                <b class="td_sup"> Inserte su día de nacimiento  <br><br>
-                <input for="calificacion_parcial1" type="text" name="dia_n" onkeypress="return validarn(event)" maxlength="2" placeholder="00"> <br> <br>
-                <input type="button" value="Regresar" name="borrar" onclick="RegresarMesCumpleaños()">
-                <input type="button" value="Siguiente" onclick="SiguienteAñoActual()" name="siguiente" id="siguiente1"> 
-                <input type="button" value="Borrar" name="borrar" onclick="BorrarDiaCumpleaños()">
+               <label class="td_sup" id="dia_nacimiento_texto"> Inserte su día de nacimiento </label>
+                <input type="text" name="dia_n" id="ingresar_texto" onkeypress="return validarn(event)" maxlength="2" placeholder="00"><br>
+
+                <div id="error__dato3" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> Ingresa un dato valido para continuar 
+                </div>
+                <div id="error__borrar_dato3" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> El campo no contiene ningun dato para eliminar
+                </div>
+
+                <input type="button" id="Botones" value="Regresar" name="borrar" onclick="RegresarMesCumpleaños()">
+                <input type="button" id="Botones" value="Siguiente" onclick="SiguienteAñoActual()" name="siguiente" id="siguiente1"> 
+                <input type="button" id="Botones" value="Borrar" name="borrar" onclick="BorrarDiaCumpleaños()">
             </div>
             
     <!-- FECHA DE NACIMIENTO -->
             <div id="ano_actual" align="center">
-                <b class="td_sup"> Inserte el año actual <br><br>
-                <input for="calificacion_parcial1" type="text" name="año_a" onkeypress="return validarn(event)" maxlength="4" placeholder="0000"> <br> <br>
-                <input type="button" value="Regresar" name="borrar" onclick="RegresarDiaCumpleaños()">
-                <input type="button" value="Siguiente" onclick="SiguienteMesActual()" name="siguiente" id="siguiente3"> 
-                <input type="button" value="Borrar" name="borrar" onclick="BorrarAnoActual()">
+               <label class="td_sup" id="año_actual_texto"> Inserte el año actual </label>
+                <input type="text" name="año_a" id="ingresar_texto" onkeypress="return validarn(event)" maxlength="4" placeholder="0000"><br>
+
+                <div id="error__dato4" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> Ingresa un dato valido para continuar 
+                </div>
+                <div id="error__borrar_dato4" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> El campo no contiene ningun dato para eliminar
+                </div>
+
+                <input type="button" id="Botones" value="Regresar" name="borrar" onclick="RegresarDiaCumpleaños()">
+                <input type="button" id="Botones" value="Siguiente" onclick="SiguienteMesActual()" name="siguiente" id="siguiente3"> 
+                <input type="button" id="Botones" value="Borrar" name="borrar" onclick="BorrarAnoActual()">
             </div>
             
             <div id="mes_actual" align="center">
-                <b class="td_sup"> Inserte el mes actual <br><br>
-                <input for="calificacion_parcial1" type="text" name="mes_a" onkeypress="return validarn(event)" maxlength="2" placeholder="00"> <br><br>
-                <input type="button" value="Regresar" name="borrar" onclick="RegresarAñoActual()">
-                <input type="button" value="Siguiente" onclick="SiguienteDiaActual()" name="siguiente" id="siguiente2">
-                <input type="button" value="Borrar" name="borrar" onclick="BorrarMesActual()">
+               <label class="td_sup" id="mes_actual_texto"> Inserte el mes actual </label>
+                <input type="text" name="mes_a" id="ingresar_texto" onkeypress="return validarn(event)" maxlength="2" placeholder="00"><br>
+
+                <div id="error__dato5" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> Ingresa un dato valido para continuar 
+                </div>
+                <div id="error__borrar_dato5" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> El campo no contiene ningun dato para eliminar
+                </div>
+
+                <input type="button" id="Botones" value="Regresar" name="borrar" onclick="RegresarAñoActual()">
+                <input type="button" id="Botones" value="Siguiente" onclick="SiguienteDiaActual()" name="siguiente" id="siguiente2">
+                <input type="button" id="Botones" value="Borrar" name="borrar" onclick="BorrarMesActual()">
             </div>
             <div id="dia_actual" align="center">
-                <b class="td_sup"> Inserte el día actual  <br><br>
-                <input for="calificacion_parcial1" type="text" name="dia_a" onkeypress="return validarn(event)" maxlength="2" placeholder="00"> <br> <br>
-                <input type="button" value="Regresar" name="borrar" onclick="RegresarAño()">
-                <input type="button" value="Siguiente" onclick="CalcularEdad()" name="siguiente" id="siguiente1"> 
-                <input type="button" value="Borrar" name="borrar" onclick="borrar1()">
+               <label class="td_sup" id="dia_actual_texto"> Inserte el día actual  </label>
+                <input type="text" name="dia_a" id="ingresar_texto" onkeypress="return validarn(event)" maxlength="2" placeholder="00"><br>
+
+                <div id="error__dato6" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> Ingresa un dato valido para continuar 
+                </div>
+                <div id="error__borrar_dato6" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> El campo no contiene ningun dato para eliminar
+                </div>
+
+                <input type="button" id="Botones" value="Regresar" name="borrar" onclick="RegresarAño()">
+                <input type="button" id="Botones" value="Siguiente" onclick="CalcularEdad()" name="siguiente" id="siguiente1"> 
+                <input type="button" id="Botones" value="Borrar" name="borrar" onclick="borrar1()">
             </div>
             <div id="total">
                 <p class="td_sup" id="final"> Tienees  <br><br>
                 <input type="text" name="edad" readonly="readonly" id="cantidadi" class="input_text">
                     <br>
-                <input type="button" value="Borrar" name="borrar" onclick="BorrarTodo()">                                
+                <input type="button" id="Botones" value="Borrar" name="borrar" onclick="BorrarTodo()">                                
                     
             </div>
             </form>

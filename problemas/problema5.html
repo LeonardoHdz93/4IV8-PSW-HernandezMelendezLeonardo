@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Problema 5 </title>
+    <script src="https://kit.fontawesome.com/81aab4573e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./../css/problemas-css/problema5.css">
     <script src="./../js/problemasjs/problema5.js"></script>
 </head>
@@ -17,42 +18,48 @@
             <h2>Calcular el porcentaje de hombres y de mujeres que hay en un grupo </h2>
         </header>
         <form method="POST" name="formulario" onsubmit="return validarn(this)" action="problema01.html" align=center>
-            
-                    <p class="td_sup" id="mujeres"> Introduce la cantidad de mujeres que hay en el grupo </td>
-                    <input type="text" name="cantidadm"
-                        onkeypress="return validarn(event)">
-                <br>
-                <p class="td_sup" id="hombres"> Introduce la cantidad de hombres que hay en el grupo </td>
-                    <input type="text" name="cantidadh"
-                        onkeypress="return validarn(event)">
-                <br>
+            <div id="div_cantidad_mujeres" align="center">
+                <label id="mujeres"> Introduce la cantidad de mujeres que hay en el grupo </label><br><br>
+                <input type="text" name="cantidad_mujeres" id="introduce_texto" onkeypress="return validarn(event)"> <br><br>
+
+                <div id="error__dato" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> Ingresa un dato valido para continuar 
+                </div>
+                <div id="error__borrar_dato" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> El campo no contiene ningun dato para eliminar
+                </div>
+
+                <input type="button" value="Siguiente" id="Botones" onclick="Siguiente()">
+                <input type="button" value="Borrar"  id="Botones" onclick="Borrar()">
+            </div>
+
+            <div id="div_cantidad_hombres" align="center">
+                <label id="hombres"> Introduce la cantidad de hombres que hay en el grupo </label><br><br>
+                <input type="text" name="cantidad_hombres" id="introduce_texto" onkeypress="return validarn(event)"><br><br>
+                
+                <div id="error__dato2" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> Ingresa un dato valido para continuar 
+                </div>
+                <div id="error__borrar_dato2" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> El campo no contiene ningun dato para eliminar
+                </div>
+
+                    <input type="button" value="Regresar" id="Botones" onclick="Regresar()">
+                    <input type="button" value="Calcular porcentajes" id="Botones"  onclick="Calcular()">
+                    <input type="button" value="Borrar"  id="Botones" onclick="Borrar2()">
+                </div>
+
+                <div id="div_resultado" align="center">
+                    <label class="resultado1" id="texto_resultado"> El porcentaje de mujeres que hay en el grupo es </label>
+                    <label class="resultado1" id="texto_resultado"> El porcentaje de hombres que hay en el grupo es </label><br><br>  
+                    <input type="text" name="porcentaje_mujeres" id="resultado" readonly="readonly"class="input_text">
                         
-
-                    <input type="button" value="Total" 
-                        name="enviar" onclick="ftotal()">
-                <br>
-                
-                   <p class="td_sup" id="invisible"> El total de personas en el grupo es: 
-                    <input type="text" name="cgrupo"
-                        id="cantidadi" readonly="readonly"
-                        class="input_text">
-                    <br> 
-
-                    <p class="td_sup" id="invisible"> El porcentaje de mujeres que hay en el grupo es:  
-                        <input type="text" name="m"
-                            id="cantidadi" readonly="readonly"
-                            class="input_text">
-                        <br> 
-                        <p class="td_sup" id="invisible"> El porcentaje de hombres que hay en el grupo es:  
-                            <input type="text" name="h"
-                                id="cantidadi" readonly="readonly"
-                                class="input_text">
-                            <br> 
-                
-                    <input type="button" value="Borrar"
-                         name="borrar" onclick="borrar1()"> 
-                </tr>           
-            </table>
+                    
+                    <input type="text" name="porcentaje_hombres"id="resultado" readonly="readonly" class="input_text"> <br><br>
+        
+                    <input type="button" value="Regresar" id="Botones" onclick="Regresar2()">
+                    <input type="button" value="Borrar" id="Botones" onclick="BorrarTodo()"> 
+                </div>
         </form>
         <br>
         <a href="./problemas.html"> Regresar  </a> al menu de problemas

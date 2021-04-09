@@ -10,27 +10,88 @@ function validarn(e){
     return patron.test(prueba);
 }
 
-
-function interes(){
-    var valor = document.formulario.cantidad.value;
-    var valorm = document.formulario.cantidadm.value;
-
-    if(valor > 0, valorm > 0){
-    var result = parseInt(valor);
-    var meses = parseInt(valorm);
-    var interes = result*(meses*0.02);
-    var total = result+interes;
-    
-
-    document.formulario.sueldoti.value = "$" + total;
+function Siguiente1(){
+    var cantidad = document.formulario.cantidad_valor.value;
+    if(cantidad > '0'){
+        document.getElementById('div__cantidad').style.display = 'none';
+        document.getElementById('div__meses').style.display = 'block';
+        formulario.meses_valor.focus();
     }else{
-        alert("Completa los campos anteriores")
+        formulario.cantidad_valor.focus();
+        document.getElementById('error__dato').style.display = 'block';
+        document.getElementById('texto1').classList.add('texto-error');
+        setTimeout(() => {
+            document.getElementById('error__dato').style.display = 'none';
+            document.getElementById('texto1').classList.remove('texto-error');
+        }, 2500);
     }
+}
+function BorrarCantidad(){
+    formulario.cantidad_valor.focus();
+    var cantidad = document.formulario.cantidad_valor.value;
+    if(cantidad < '0'){
+        document.getElementById('error__borrar_dato').style.display = 'block';
+        document.getElementById('texto1').classList.add('texto-error');
+        setTimeout(() => {
+            document.getElementById('error__borrar_dato').style.display = 'none';
+            document.getElementById('texto1').classList.remove('texto-error');
+        }, 2000);
+    }else{
+        document.formulario.cantidad_valor.value = '';
+    }
+}
+function RegresarCantidad(){
+    document.getElementById('div__meses').style.display = 'none';
+    document.getElementById('div__cantidad').style.display = 'block';
+    formulario.cantidad_valor.focus();
+}
+function Calcular(){
+    var inversion = document.formulario.cantidad_valor.value;
+    var meses = document.formulario.meses_valor.value;
+
+    if(inversion > 0, meses > 0){
+        document.getElementById('div__resultado').style.display = 'block';
+        document.getElementById('div__meses').style.display = 'none';
+    var interes = inversion*(meses*0.02);
+    var total = inversion+interes;
     
+
+    document.formulario.resultado_valor.value =  total ;
+    }else 
+    formulario.meses_valor.focus();
+        document.getElementById('error__dato2').style.display = 'block';
+        document.getElementById('texto2').classList.add('texto-error');
+        setTimeout(() => {
+            document.getElementById('error__dato2').style.display = 'none';
+            document.getElementById('texto2').classList.remove('texto-error');
+        }, 2000);
+    
+
 }
 
-function borrar1(){
-    document.formulario.sueldoti.value = "";
-    document.formulario.cantidad.value = "";
-    document.formulario.cantidadm.value = "";
+function BorrarMeses(){
+    formulario.meses_valor.focus();
+    var cantidad = document.formulario.meses_valor.value;
+    if(cantidad < '0'){
+        document.getElementById('error__borrar_dato2').style.display = 'block';
+        document.getElementById('texto2').classList.add('texto-error');
+        setTimeout(() => {
+            document.getElementById('error__borrar_dato2').style.display = 'none';
+            document.getElementById('texto2').classList.remove('texto-error');
+        }, 2000);
+    }else{
+        document.formulario.meses_valor.value = '';
+    }
+}
+function RegresarMeses(){
+    document.getElementById('div__meses').style.display = 'block';
+    document.getElementById('div__resultado').style.display = 'none';
+    formulario.meses_valor.focus();
+}
+function Borrar1(){
+    document.getElementById('div__resultado').style.display = 'none';
+        document.getElementById('div__cantidad').style.display = 'block';
+    document.formulario.meses_valor.value = "";
+    document.formulario.cantidad_valor.value = "";
+    document.formulario.resultado_valor.value = "";
 }

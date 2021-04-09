@@ -11,63 +11,98 @@ function validarn(e){
 
 function Siguientenumero(){
     var vnum = document.formulario.num1.value;
-    if(vnum >= 0, vnum <= 9999){
+    if(vnum > '0' && vnum <= 9999){
     document.getElementById('numero1').style.display = 'none';    
     document.getElementById('numero2').style.display = 'block';
     formulario.num2.focus();
     }else{
-        if(vnum < 0){
-            alert("Pon un valor entre 0 y 9999");
-            formulario.num1.focus();
-        }             
+        formulario.num1.focus();
+        document.getElementById('error__dato').style.display = 'block';
+        document.getElementById('numero_1').classList.add('texto-error');
+        setTimeout(() => {
+            document.getElementById('error__dato').style.display = 'none';
+            document.getElementById('numero_1').classList.remove('texto-error');
+            
+        }, 2000);         
     } 
       
 }
-
-function continuarf(){
-    /* DESPLEGAMOS EL LUGAR DONDE VA A IR EL RESULTADO  */
+function Borrar1(){
+    var vnum = document.formulario.num1.value;
+    formulario.num1.focus();
+    if(vnum > '0'){
+        document.formulario.num1.value = "";
+    }else{
+        document.getElementById('error__borrar_dato').style.display = 'block';
+        document.getElementById('numero_1').classList.add('texto-error');
+        setTimeout(() => {
+            document.getElementById('error__borrar_dato').style.display = 'none';
+            document.getElementById('numero_1').classList.remove('texto-error');
+            
+        }, 2000); 
+    }
+}
+function Regresar(){
+    document.getElementById('numero1').style.display = 'block';
     document.getElementById('numero2').style.display = 'none';
-    document.getElementById('total').style.display = 'block';
-
-    // OBTENEMOS VALORES PARA LAS OPERACIONES
+    formulario.num1.focus();
+}
+function continuarf(){
     var vnum = document.formulario.num1.value;
     var vnum2 = document.formulario.num2.value;
-    
+    if (vnum > '0' && vnum2 > '0'){
+    document.getElementById('numero2').style.display = 'none';
+    document.getElementById('total').style.display = 'block';   
 
-    // VERIFICAMOS QUE SE COMPLETEN LOS CAMPOS CON DAROS FUNCIONALES  
    
-        //PASAMOS A VALORES INT PARA PODER HACER LAS OPERACIONES 
-    var vnum = parseInt(vnum);
-    var vnum2 = parseInt(vnum2);
-    
-    // HACEMOS LAS OPERACIONES
+    var vnum = parseFloat(vnum);
+    var vnum2 = parseFloat(vnum2);  
     
     var iguales = vnum * vnum2;
     var suma = vnum + vnum2;
     var resta = vnum - vnum2;
     
    
-    if(vnum == vnum2){
-        
-       document.formulario.total.value = iguales
-    }else{
-    if(vnum > vnum2){
-       
-        document.formulario.total.value = resta
-     }else{
-    if(vnum < vnum2){
-           document.formulario.total.value = suma
+    if(vnum == vnum2){        
+       document.formulario.total.value = iguales;
+    }else if(vnum > vnum2){       
+        document.formulario.total.value = resta;
+     }else if(vnum < vnum2){
+           document.formulario.total.value = suma;  
          }
+     }else{
+         formulario.num2.focus();
+        document.getElementById('error__dato2').style.display = 'block';
+        document.getElementById('numero_2').classList.add('texto-error');
+        setTimeout(() => {
+            document.getElementById('error__dato2').style.display = 'none';
+            document.getElementById('numero_2').classList.remove('texto-error');
+            
+        }, 2000); 
      }
      
     
 }
+function Borrar2(){
+    var vnum = document.formulario.num2.value;
+    formulario.num2.focus();
+    if(vnum > '0'){
+        document.formulario.num2.value = "";
+    }else{
+        document.getElementById('error__borrar_dato2').style.display = 'block';
+        document.getElementById('numero_2').classList.add('texto-error');
+        setTimeout(() => {
+            document.getElementById('error__borrar_dato2').style.display = 'none';
+            document.getElementById('numero_2').classList.remove('texto-error');
+            
+        }, 2000); 
+    }
 }
 
-
-function borrar1(){
+function BorrarTodo(){
     document.formulario.num1.value = "";
     document.formulario.num2.value = "";
+    document.formulario.total.value = "";
    
     document.getElementById('numero1').style.display = 'block';
     document.getElementById('total').style.display = 'none';

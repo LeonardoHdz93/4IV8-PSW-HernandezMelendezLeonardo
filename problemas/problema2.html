@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Problema 2 </title>
+    <script src="https://kit.fontawesome.com/81aab4573e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./../css/problemas-css/problema2.css">
     <script src="./../js/problemasjs/problema2.js"></script>
 </head>
@@ -14,43 +15,54 @@
     </Header>
     <div class="contenido">
         <header class="titulo">
-            <h2>Calcular el total del dinero que se va a tener al finalizar el tiempo de tu inversion</h2>
+            <h2>Calcular el total del sueldo mas comisiones</h2>
         </header>
         <form method="POST" name="formulario" onsubmit="return validarn(this)" action="problema01.html">
-            <table align="center" border="1">
-                <tr>
-                    <td class="td_sup"> Introduce tu sueldo base: </td>
-                    <td class="td_inf"><input type="text" name="sueldo"
-                        onkeypress="return validarn(event)"></td>
-                </tr>
-                <tr>
-                    <td class="td_sup"> Introduce las ventas que tuviste:  </td>
-                    <td class="td_inf"><input type="text" name="cantidadv"
-                        onkeypress="return validarn(event)"size="2"></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="td_inf"><input type="button" value="Calcular saldo" 
-                        name="enviar" onclick="comision()"></td>
-                </tr>
-                <tr>
-                    <td class="td_sup"> Su monto por comisiones es: </td>
-                    <td><input type="text" name="sueldoc"
-                        id="cantidadic" readonly="readonly"
-                        class="input_text"></td>
-                </tr> 
-                <tr>
-                    <td class="td_sup"> Su sueldo total contando las comisiones por ventas es: </td>
-                    <td><input type="text" name="sueldoti"
-                        id="cantidadi" readonly="readonly"
-                        class="input_text"></td>
-                </tr> 
-                <tr>
-                    <td></td>
-                    <td><input type="button" value="Borrar"
-                         name="borrar" onclick="borrar1()"> </td>
-                </tr>           
-            </table>
+
+<!-- Cantidad a invertir-->
+            <div id="div__cantidad" align="center">
+                <label id="texto1"> Introduce tu sueldo base </label><br>
+                <i class="fas fa-dollar-sign"></i><input type="text" name="cantidad_valor" id="introduce_texto" onkeypress="return validarn(event)"><br><br>
+
+                <div id="error__dato" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> Ingresa un dato valido para continuar 
+                </div>
+                <div id="error__borrar_dato" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> El campo no contiene ningun dato para eliminar
+                </div>
+
+                <input type="button" value="Siguiente" onclick="Siguiente1()" name="siguiente" id="Botones"> 
+                <input type="button" value="Borrar" name="borrar" onclick="BorrarCantidad()" id="Botones">
+            </div>
+<!-- Cantidad de meses-->
+            <div id="div__meses" align="center">
+                <label id="texto2"> Introduce las ventas que tuviste </label><br>
+                <input type="text" name="meses_valor" id="introduce_texto" onkeypress="return validarn(event)"> <br><br>
+
+                <div id="error__dato2" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> Ingresa un dato valido para continuar 
+                </div>
+                <div id="error__borrar_dato2" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> El campo no contiene ningun dato para eliminar
+                </div>
+
+                <input type="button" value="Regresar"  name="siguiente" onclick="RegresarCantidad()" id="Botones"> 
+                <input type="button" value="Calcular" name="siguiente" onclick="comision()"  id="Botones"> 
+                <input type="button" value="Borrar" name="borrar" onclick="BorrarMeses()" id="Botones">
+            </div>
+<!-- Resuñtado -->
+            <div id="div__resultado" align="center">
+                <label id="final"> Su sueldo total contando las comisiones por ventas es </label><br>
+                <i class="fas fa-dollar-sign"></i><input type="text" name="resultado_valor" id="resultado" readonly="readonly" class="input_text"><br><br>
+
+                
+                <div id="error__borrar_dato" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> El campo no contiene ningun dato para eliminar
+                </div>
+
+                <input type="button" value="Regresar"  name="siguiente" onclick="RegresarMeses()" id="Botones"> 
+                <input type="button" value="Borrar" name="borrar" onclick="BorrarTodo()" id="Botones">
+            </div>
         </form>
         <br>
         <a href="./problemas.html"> Regresar  </a> al menu de problemas

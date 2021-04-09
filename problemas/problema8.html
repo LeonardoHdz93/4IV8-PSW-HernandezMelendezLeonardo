@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>problema 8</title>
+    <script src="https://kit.fontawesome.com/81aab4573e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./../css/problemas-css/problema8.css">
     <script src="./../js/problemasjs/problema8.js"></script>
 </head>
@@ -14,30 +15,60 @@
     </Header>
     <div class="contenido">
         <header class="titulo">
-            <h2>Calcular el total del dinero que se va a tener al finalizar el tiempo de tu inversion</h2>
+            <h2>Comparacion de 3 numeros</h2>
         </header>
         <form method="POST" name="formulario" onsubmit="return validarn(this)" action="problema01.html" align=center>
             
             <div id="numero1" align="center">
-                <b class="td_sup"> Inserte un numero <br><br>
-                <input for="calificacion_parcial1" type="text" name="num1" onkeypress="return validarn(event)" maxlength="4" placeholder="0000"> <br> <br>
-                <input type="button" value="Siguiente" onclick="Siguientenumero()" name="siguiente" id="siguiente1"> 
+                <label class="td_sup" id="numero_1"> Inserte un numero </label><br>
+                <input type="text" name="num1" id="introduce_texto" onkeypress="return validarn(event)" maxlength="4" placeholder="0000"> <br>
+                <div id="error__dato" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> Ingresa un dato valido para continuar 
+                </div>
+                <div id="error__borrar_dato" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> El campo no contiene ningun dato para eliminar
+                </div>
+                
+                <input type="button" value="Siguiente" onclick="Siguientenumero()"  id="Botones"> 
+                <input type="button" value="Borrar" onclick="Borrar1()"  id="Botones">
             </div>
             <div id="numero2" align="center">
-                <b class="td_sup"> Inserte otro numero <br><br>
-                <input for="calificacion_parcial1" type="text" name="num2" onkeypress="return validarn(event)" maxlength="4" placeholder="0000"> <br><br>
-                <input type="button" value="Continuar" onclick="Siguientenumero2()" name="siguiente" id="siguiente2">
+                <label class="td_sup" id="numero_2"> Inserte otro numero </label> <br>
+                <input type="text" name="num2" id="introduce_texto" onkeypress="return validarn(event)" maxlength="4" placeholder="0000"> <br>
+
+                <div id="error__dato2" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> Ingresa un dato valido para continuar 
+                </div>
+                <div id="error__borrar_dato2" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> El campo no contiene ningun dato para eliminar
+                </div>
+
+                <input type="button" value="Regresar" onclick="Regresar1()"  id="Botones">
+                <input type="button" value="Siguiente" onclick="Siguientenumero2()"  id="Botones">
+                <input type="button" value="Borrar" onclick="Borrar2()"  id="Botones">
             </div>
             <div id="numero3" align="center">
-                <b class="td_sup"> Inserte un tercer numero <br><br>
-                <input for="calificacion_parcial1" type="text" name="num3" onkeypress="return validarn(event)" maxlength="4" placeholder="0000"> <br> <br>
-                <input type="button" value="Siguiente" onclick="continuarf()" name="siguiente" id="siguiente3"> 
+                <label class="td_sup" id="numero_3"> Inserte un tercer numero </label><br>
+                <input type="text" name="num3" id="introduce_texto" onkeypress="return validarn(event)" maxlength="4" placeholder="0000"><br>
+
+                <div id="error__dato3" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> Ingresa un dato valido para continuar 
+                </div>
+                <div id="error__borrar_dato3" align="center">
+                    <i class="fas fa-exclamation-triangle"> <b> Error: </b></i> El campo no contiene ningun dato para eliminar
+                </div>
+
+                <input type="button" value="Regresar" onclick="Regresar2()"  id="Botones">
+                <input type="button" value="Comparar" onclick="continuarf()"  id="Botones"> 
+                <input type="button" value="Borrar" onclick="Borrar3()"  id="Botones">
             </div>
             <div id="total">
-                <p class="td_sup" id="final"> Resultado <br><br>
+                <label class="td_sup" id="final"> Resultado </label><br>
                 <input type="text" name="total" readonly="readonly" id="cantidadi" class="input_text">
                     <br>
-                <input type="button" value="Borrar" name="borrar" onclick="borrar1()">                                
+
+                <input type="button" value="Regresar" onclick="Regresar3()"  id="Botones">
+                <input type="button" value="Borrar"  onclick="BorrarTodo()" id="Botones">                                
                     
             </div>
             </form>
