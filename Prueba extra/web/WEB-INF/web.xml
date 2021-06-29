@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
-        <servlet-name>Registro</servlet-name>
-        <servlet-class>Registro</servlet-class>
+        <servlet-name>Altas</servlet-name>
+        <servlet-class>Altas</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Consultar</servlet-name>
-        <servlet-class>Consultar</servlet-class>
+        <servlet-name>ConsultarTodo</servlet-name>
+        <servlet-class>ConsultarTodo</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Eliminar</servlet-name>
-        <servlet-class>Eliminar</servlet-class>
+        <servlet-name>ConsultarContrasena</servlet-name>
+        <servlet-class>ConsultarContrasena</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Registro</servlet-name>
-        <url-pattern>/Registro</url-pattern>
+        <servlet-name>Altas</servlet-name>
+        <url-pattern>/Altas</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Consultar</servlet-name>
-        <url-pattern>/Consultar</url-pattern>
+        <servlet-name>ConsultarTodo</servlet-name>
+        <url-pattern>/ConsultarTodo</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Eliminar</servlet-name>
-        <url-pattern>/Eliminar</url-pattern>
+        <servlet-name>ConsultarContrasena</servlet-name>
+        <url-pattern>/ConsultarContrasena</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

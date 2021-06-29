@@ -19,23 +19,22 @@ import java.sql.Statement;
 //Esta de encarga de generar un objeto para poder realizar las consultas sql
 import java.sql.ResultSet;
 import javax.servlet.ServletConfig;
-
-
 /**
  *
- * @author Leonardo Hernandez Melendez
+ * @author Lousy
  */
-public class Registro extends HttpServlet {
+public class Eliminar extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
      *
      * @param request servlet request
-     * @param response servlet response de atender las respuestas por parte del servidor.
+     * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
+    
     //Variables globales
     
     private Connection con;
@@ -75,81 +74,9 @@ public class Registro extends HttpServlet {
            
        }
     }
+    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            String nom, appat, apmat, correo;
-            int edad;
-            
-            nom = request.getParameter("nombre");
-            appat = request.getParameter("appat");
-            apmat = request.getParameter("apmat");
-            edad = Integer.parseInt(request.getParameter("edad"));
-            correo = request.getParameter("correo");
-            
-            
-            //vamos a intentar reegistrar en la bd
-            try{               
-                /*
-                Para poder registrar un usuario es nesesaria la sentencia 
-                'insert'
-                
-                insert into nombretabla (atributo1, atributo2, ...) values(valor1, valor2, ...)
-                "" son valores string
-                '' & nada = numerico
-                */                
-                String q = "insert into mregistro"
-                            +"(nombre,appat,apmat,edad,correo)"
-                            +"values"
-                            +"('"+nom+"','"+appat+"','"+apmat+"',"+edad+",'"+correo+"')";
-                
-                set.executeUpdate(q);
-                System.out.println("Registro Exitoso en la tabla");
-            
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet Registro</title>");            
-            out.println("</head>");
-            out.println("<body>"
-                    + "<br>"
-                    + "Tu nombre es:" +nom
-                    + "<br>"
-                    + "Tu apellido paterno es :" + appat
-                    + "<br>"
-                    + "Tu apellido materno es:" + apmat
-                    + "<br>"
-                    + "Tu edad es :" + edad
-                    + "<br>"
-                    + "Tu email es :" + correo
-                    + "<br>");
-            out.println("<h1>Registro Exitoso</h1>"
-                    + "<a href='index.html'>Regresar al menu principal</a>");
-            out.println("</body>");
-            out.println("</html>");
-            
-            
-            
-            }catch(Exception e){
-                System.out.println("Error al registrar en la tabla");
-                System.out.println(e.getMessage());
-                System.out.println(e.getStackTrace());
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet Registro</title>");            
-            out.println("</head>");
-            out.println("<body>" + "<br>");
-            out.println("<h1>Registro No Exitoso Ocurrio un error</h1>"
-                    + "<a href='index.html'>Regresar al menu principal</a>");
-            out.println("</body>");
-            out.println("</html>");
-            
-            }
-        }
-    }
+            throws ServletException, IOException {}
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -177,7 +104,32 @@ public class Registro extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+         response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet Eliminar</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            int id;
+            
+            id = Integer.parseInt(request.getParameter("ideliminar"));
+            String q = "delete from mregistro where id = " +id;
+            try{
+                set.executeUpdate(q);
+                out.println("<h1>Usuario Eliminado</h1>");
+                System.out.println("Registro Eliminado");
+            }catch(Exception e){
+                out.println("<h1>Usuario No Eliminado, ocurrio un error</h1>");
+                System.out.println("Error al eliminar el registro"
+                        + "<a href='index.html'>Regresar al menu principal</a>");
+            }
+            out.println("<a href='index.html'>Regresar al menu principal</a>");
+            out.println("</body>");
+            out.println("</html>");
+        }
     }
 
     /**
@@ -185,7 +137,6 @@ public class Registro extends HttpServlet {
      *
      * @return a String containing servlet description
      */
-    
     
     public void destroy(){
         try{

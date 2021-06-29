@@ -9,13 +9,13 @@ and open the template in the editor.
         <title>Registro de Usuarios</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
         <div class="container">
             <div class="contenedorRegistro">
                 <form method="post" name="formulario" action="Registro">
-                <label>Nombre: </label>
-                        
+                <label>Nombre: </label>                        
                 <br>
                 <input type="text" name="nombre">
                 <br>
@@ -34,9 +34,24 @@ and open the template in the editor.
                 <label>Email: </label>
                 <br>
                 <input type="email" name="correo">
-                <br>
+                <br><br>
                 <input type="submit" value="Registrar Usuario">
                 <input type="reset" value="Borrar Datos">
+                </form>
+            </div>
+            <br>
+            <div class="contenedorConsultar">
+                <br>
+                <form name="formularioConsultar" method="get" action="Consultar">
+                    <input type="submit" value="Consultar tabla general de usuarios">
+                </form>
+            </div>
+            <div class="contenedorEliminar">
+                <br>
+                <form name="formularioEliminar" method="post" action="Eliminar">
+                    <label>Ingresa el id del usuario a Eliminar</label>
+                    <input type="text" name="ideliminar">
+                    <input type="submit" value="Eliminar usuario">
                 </form>
             </div>
             

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="container contenedor">
+            <div class="formulario">
+                <form method="post" name="formulario" action="Altas">
+                <div class="secciones">
+                    <label>Nombre: </label>
+                    <input class="input" type="text" name="nombre" placeholder="Juan Perez">
+                </div>
+                <div class="secciones">
+                    <label>Contrasena: </label>                        
+                    <input class="input" type="password" name="contrasena" placeholder="********">
+                </div>
+                <div class="secciones">
+                    <label>Puesto: </label>
+                    <select  class="input" name="puesto" id="" class="formulario__campo">
+                        <option value="" disabled selected>Seleccionar uno</option>
+                        <option value="base">base</option>                   
+                    </select>
+                </div>
+                <div class="secciones">
+                    <label>Sueldo: </label>
+                    <input  class="input" type="number" name="sueldo" placeholder="300">
+                </div>
+                <a href="./index.html" class="boton">Regresar</a>
+                <input class="boton" type="submit" value="Registrar Usuario">
+                <input class="boton" type="reset" value="Borrar Datos">
+                </form>
+            </div>
+            
+        </div>
+    </body>
+</html>
